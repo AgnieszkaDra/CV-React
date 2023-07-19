@@ -53,6 +53,14 @@ code {
 
 .header .container-block {
   padding: 30px;
+  
+}
+
+.header .container-block > * {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .header .contact-list {
