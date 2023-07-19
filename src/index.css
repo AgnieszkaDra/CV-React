@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  background: #42A8C0;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+.header .profile-container {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+
+@media(min-width: 768px){
+  .header .profile-container {
+  display: flex;
+}
+}
+
+.header .name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.header .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header .photo {
+  margin-bottom: 15px;
+}
+
+.header .container-block {
+  padding: 30px;
+}
+
+.header .contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.header .contact-list li {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+ 
+}
+
+
+
+
+
+
+
+.header .contact-list .svg-inline--fa {
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.header .contact-list li {
+  margin-bottom: 15px;
+}
+.header .contact-list li:last-child {
+  margin-bottom: 0;
+}
+
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
