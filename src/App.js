@@ -1,12 +1,20 @@
 
+import React from 'react';
 import logo from '../src/assets/face.jpg';
+import Header from './components/Header';
+import data from './data';
+import PropTypes from 'prop-types';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone, faGlobe, faLink } from '@fortawesome/free-solid-svg-icons'
 
 
-function App() {
-  return (
+export default class CV extends React.Component{
+  render() {
+    return (
+  <>
     <div className="container">
+      <Header {...this.props.infoProfile.profileBasic}></Header>
       <div class="header">
         <div className="profile-container">
           <div>
@@ -64,7 +72,15 @@ function App() {
       <div className="main">
       </div>
     </div>
-  );
+    </>
+  
+  
+  )};
 }
 
-export default App;
+
+
+CV.propTypes = {
+  profile: PropTypes.shape().isRequired,
+ 
+};
