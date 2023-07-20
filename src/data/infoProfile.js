@@ -1,7 +1,7 @@
 const infoProfile = {
     profileBasic :{ name: 'Agnieszka Dragańczyk', title: 'Junior Front End Developer'},
-    profilelist: [ 
-        
+    profileList: {
+      list: [
         { mail: 'agnieszka.127@interia.pl'},
         { phoneNumber: '+48 517 862 170'},
         { portfolio: ''},
@@ -9,7 +9,9 @@ const infoProfile = {
         { github: ''},
         { imagePath: ''}
       ]
-    }
+    } 
+        
+  }
   
   
   export default infoProfile;

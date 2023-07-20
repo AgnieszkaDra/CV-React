@@ -14,7 +14,7 @@ export default class CV extends React.Component{
     return (
   <>
     <div className="container">
-      <Header {...this.props.infoProfile.profileBasic}></Header>
+      <Header {...this.props.infoProfile}></Header>
       <div class="header">
         <div className="profile-container">
           <div>
