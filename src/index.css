@@ -55,13 +55,13 @@ header .container-block {
   padding: 30px;
   
 }
-
+/* 
 header .container-block > * {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-}
+} */
 
 header .contact-list {
   display: flex;
@@ -99,6 +99,27 @@ header .contact-list li {
 .list-unstyled {
   padding-left: 0;
   list-style: none;
+}
+
+.contacts-list {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column; 
+  
+}
+
+.break3 {
+ margin-left: 5px;
+ margin-right: 5px;
+ display: block;
+ width: 10px;
+ height: 10px;
+}
+
+.contacts-list li{
+ display: flex;
 }
 
 .sidebar-wrapper {

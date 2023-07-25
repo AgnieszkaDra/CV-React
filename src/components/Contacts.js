@@ -9,9 +9,9 @@ class Contacts extends React.Component{
          
                 <div className="contact-container container-block">
 
-        <ul className="list-unstyled interests-list" key="lang_list">
+        
          <ContactsList {...this.props}></ContactsList>
-        </ul>                    
+                       
                 </div>
           
         )
