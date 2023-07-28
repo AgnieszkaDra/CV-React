@@ -3,13 +3,15 @@ import React from 'react';
 
 import Header from './components/HeaderContainer/Header';
 import Experience from './components/Experience/Experience';
+import Skills from './components/Skills/Skills';
+
 import data from './data';
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone, faGlobe, faLink } from '@fortawesome/free-solid-svg-icons'
-import Section from './shared/Section';
-import experience from './data/experience';
+import Section from './shared/section';
+
 
 
 export default class CV extends React.Component{
@@ -19,8 +21,11 @@ export default class CV extends React.Component{
     <div className="container">
       {/* <Header {...this.props.infoProfile}></Header>  */}
       <Header {...data}></Header>
-      <Section {...data}>
-        <Experience {...data.experience}>{'ola'}</Experience>
+      <Section {...data} sectionTitle="Work and Experience">
+        <Experience {...data.experience}></Experience>
+      </Section>
+      <Section {...data} sectionTitle="Skills">
+        <Skills {...data.skills}></Skills>
       </Section>
       {/* <Experience {...data.experience}></Experience> */}
       <div class="header">
