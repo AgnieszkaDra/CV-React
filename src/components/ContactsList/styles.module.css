@@ -1,0 +1,31 @@
+.root {
+
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column; 
+
+}
+
+.root li {
+
+  display: flex;
+
+}
+
+ .root li > * {
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 30px;
+  margin-left: 10px;
+
+}
+
+
+
+
+

@@ -96,7 +96,7 @@ header .contact-list li {
 }
 
 
-.list-unstyled {
+/* .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
@@ -108,7 +108,7 @@ header .contact-list li {
   align-items: flex-start;
   flex-direction: column; 
   
-}
+} */
 
 .break3 {
  margin-left: 5px;

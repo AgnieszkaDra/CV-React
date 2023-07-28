@@ -1,12 +1,15 @@
 
 import React from 'react';
-import logo from '../src/assets/face.jpg';
-import Header from './components/Header';
+
+import Header from './components/HeaderContainer/Header';
+import Experience from './components/Experience/Experience';
 import data from './data';
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone, faGlobe, faLink } from '@fortawesome/free-solid-svg-icons'
+import Section from './shared/Section';
+import experience from './data/experience';
 
 
 export default class CV extends React.Component{
@@ -14,11 +17,16 @@ export default class CV extends React.Component{
     return (
   <>
     <div className="container">
-      <Header {...this.props.infoProfile}></Header>
+      {/* <Header {...this.props.infoProfile}></Header>  */}
+      <Header {...data}></Header>
+      <Section {...data}>
+        <Experience {...data.experience}>{'ola'}</Experience>
+      </Section>
+      {/* <Experience {...data.experience}></Experience> */}
       <div class="header">
         <div className="profile-container">
           <div>
-            <img className="photo" src={logo} alt="" style={{ maxWidth: 185 }} />
+            <img className="photo"  alt="" style={{ maxWidth: 185 }} />
             <h1 className="name">Agnieszka Dragańczyk</h1>
             <h3 className="tagline">Junior Front End Developer</h3>
           </div>
