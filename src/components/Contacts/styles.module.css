@@ -1,21 +1,9 @@
 .root {
-  
-  
+  border: 10px solid pink;
+  padding: 5px;
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
   color: #fff;
-  margin: 0;
-  display: flex;
-  justify-content: center;
- flex-direction: column;
- border: 5px solid pink;
-
-
-  
-  /* justify-content:center;
-  align-items: center; */ 
-
-
 }
 
 .name {

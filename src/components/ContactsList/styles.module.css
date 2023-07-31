@@ -9,8 +9,7 @@
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
-  background-color: pink;
-
+ 
 }
 
 .listItem {
@@ -21,7 +20,6 @@
 }
 
 .list {
-  border: 2px solid black;
   list-style: none;
 }
 
