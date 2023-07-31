@@ -19,7 +19,10 @@ export const Header = (props) => {
         {...props.infoProfile.profileBasic}
         className={'mainProfile'}>
       </MainProfile>
-      <Contacts {...props.infoProfile.profileList}></Contacts>
+      <Contacts
+        {...props.infoProfile.profileList}
+        className={'contacts'}>
+      </Contacts>
     </header>
 
   )

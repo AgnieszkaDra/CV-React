@@ -13,7 +13,8 @@ export default class CV extends React.Component {
         <div className={'container'}>
           <Header
             {...data}
-            className={'header'}></Header>
+            className={'header'}>
+          </Header>
           <Main {...data}></Main>
         </div>
       </>

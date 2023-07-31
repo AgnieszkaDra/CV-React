@@ -11,10 +11,10 @@ export const Contacts = (props) => {
   const ulClass = classes[className]
   return (
 
-    <div className={`${classes.root}${ulClass ? ` ${className}` : ''}`}>
+    <div className={`${classes.root}${className ? ` ${ulClass}` : ''}`}>
       <ContactsList
         {...props}
-        className={`${classes.root}${className ? ` ${className}` : ''}`}>
+        className={'listItem'}>
       </ContactsList>
     </div>
 
