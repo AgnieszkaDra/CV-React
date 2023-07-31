@@ -6,7 +6,7 @@ export const ContactsList = (props) => {
   const {
     className
   } = props
-
+  const liClass = classes[className]
   const showObject = (el) => {
     return Object.entries(el).map(([key, values]) => {
       return <>{<span className={'space'}></span>}{<a href={`//${values}`} target='blank'> {values} </a>}</>
@@ -19,7 +19,7 @@ export const ContactsList = (props) => {
 
   return (
 
-    <ul className={`${classes.root}${className ? ` ${className}` : ''}`}>
+    <ul className={`${classes.root}${liClass ? ` ${className}` : ''}`}>
       {props.list.map((item, i) => {
         return renderListItem(item, i)
       })}

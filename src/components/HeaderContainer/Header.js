@@ -13,13 +13,13 @@ export const Header = (props) => {
   } = props
 
   const headerClass = classes[className]
-
   return (
     <header className={`${classes.root}${className ? ` ${headerClass}` : ''}`}>
-      <div>
-        <MainProfile {...props.infoProfile.profileBasic}></MainProfile>
-        <Contacts {...props.infoProfile.profileList}></Contacts>
-      </div>
+      <MainProfile
+        {...props.infoProfile.profileBasic}
+        className={'mainProfile'}>
+      </MainProfile>
+      <Contacts {...props.infoProfile.profileList}></Contacts>
     </header>
 
   )

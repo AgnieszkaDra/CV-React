@@ -8,11 +8,14 @@ export const Contacts = (props) => {
   const {
     className
   } = props
-
+  const ulClass = classes[className]
   return (
 
-    <div className={`${classes.root}${className ? ` ${className}` : ''}`}>
-      <ContactsList {...props}></ContactsList>
+    <div className={`${classes.root}${ulClass ? ` ${className}` : ''}`}>
+      <ContactsList
+        {...props}
+        className={`${classes.root}${className ? ` ${className}` : ''}`}>
+      </ContactsList>
     </div>
 
   )
