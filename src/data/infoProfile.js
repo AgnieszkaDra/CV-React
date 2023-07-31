@@ -1,16 +1,28 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone, faGlobe, faLink } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons'
 const infoProfile = {
-    profileBasic :{ name: 'Agnieszka Dragańczyk', title: 'Junior Front End Developer'},
-    profileList: {
-      list: [
-        [ <FontAwesomeIcon icon={faEnvelope}/> , { mail: 'agnieszka.127@interia.pl'}],
-        [ <FontAwesomeIcon icon={faPhone} />, { phoneNumber: '+48 517 862 170' }],
-        [ <FontAwesomeIcon icon={faGlobe} />,{ portfolio: ''}]
-      ]
-    } 
-        
+  profileBasic: { name: 'Agnieszka Dragańczyk', title: 'Junior Front End Developer' },
+  profileList: {
+    list: [
+      // eslint-disable-next-line react/react-in-jsx-scope
+      [<FontAwesomeIcon
+        icon={faEnvelope}
+        key={'kk'}
+      />,
+      { mail: 'agnieszka.127@interia.pl' }],
+      // eslint-disable-next-line react/react-in-jsx-scope
+      [<FontAwesomeIcon
+        icon={faPhone}
+        key={'kkk'}
+      />,
+      { phoneNumber: '+48 517 862 170' }],
+      // eslint-disable-next-line react/react-in-jsx-scope
+      [<FontAwesomeIcon
+        icon={faGlobe}
+        key={'ndsjdn'}/>, { portfolio: '' }]
+    ]
   }
-  
-  
-  export default infoProfile;
+
+}
+
+export default infoProfile

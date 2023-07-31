@@ -1,13 +1,14 @@
-import infoProfile from './infoProfile';
-import experience from './experience';
-import skills from './skills';
+import infoProfile from './infoProfile'
+import experience from './experience'
+import skills from './skills'
+import projects from './projects'
 
 export const data = {
 
   infoProfile,
   experience,
-  skills
-  
-};
+  skills,
+  projects
+}
 
-export default data;
+export default data

@@ -1,33 +1,36 @@
-import React from 'react';
-import { Children } from 'react';
+import React, { Children } from 'react'
+
+import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
 
- const Section = (props) =>  {
+const Section = (props) => {
   const {
     className,
     sectionTitle,
     children
-  }=props
+  } = props
 
-
-    return (
-      <section className={`section ${(className || ' ') && `${classes.root}`}`}>
-        <h2 className="section-title">
-         {sectionTitle}
-         <div className="RowList">
-      {Children.map(children, child =>
-        <div className="Row">
-          {child}
+  return (
+    <section className={`section ${(className || ' ') && `${classes.root}`}`}>
+      <h2>
+        {sectionTitle}
+        <div>
+          {Children.map(children, child =>
+            <div>
+              {child}
+            </div>
+          )}
         </div>
-      )}
-    </div>
-        </h2>
-      
-      </section>
-    );
-  }
+      </h2>
+    </section>
+  )
+}
 
+Section.propTypes = {
+  className: PropTypes.string,
+  sectionTitle: PropTypes.object,
+  children: PropTypes.node
+}
 
 export default Section
-
