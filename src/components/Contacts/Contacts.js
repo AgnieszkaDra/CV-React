@@ -22,7 +22,8 @@ export const Contacts = (props) => {
 }
 
 Contacts.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  profileList: PropTypes.object
 }
 
 export default Contacts

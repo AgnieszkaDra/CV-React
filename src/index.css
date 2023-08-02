@@ -21,8 +21,15 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 a {
   text-decoration: none;
-  background-color: #42A8C0;
+  color: white;
 }
+
+a:hover {
+  color:#00A0C6; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

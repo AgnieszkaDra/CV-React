@@ -3,22 +3,30 @@
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
   color: #fff;
+  float: left;
+  position: relative;
 }
 
-.mainProfile {
+/* .mainProfile {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60% 20% 20%;
     width: 100%;
     height: 100%;
+} */
+
+.imageContainer {
+  float: left;
+  width: 50%;
 }
 
-
-
 img {
-  width: 60%;
-  height: 100%;
-  margin: auto;
+  display: block;
+ width: 100%;
+ height: 100%;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 40%, 72% 76%, 0 61%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 40%, 72% 76%, 0 61%);
+  
 }
 
 .name {

@@ -4,6 +4,7 @@
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
   color: #fff;
+  float: left;
   
 }
 
@@ -16,8 +17,4 @@
 
 }
 
-.contacts {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 33,33% 33,33% 33,33%;
-}
+
