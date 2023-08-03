@@ -10,18 +10,17 @@ export const MainProfile = (props) => {
     className
   } = props
 
-  const mainProfileClass = classes[className]
+  // const mainProfileClass = classes[className]
   const mainProfilePhoto = `${classes[className + 'photo']}`
   return (
-
-    <div className={`${classes.root}${className ? ` ${mainProfileClass}` : ''}`}>
-      <div className={classes.imageContainer}><img className={mainProfilePhoto} src={logo} alt="" /></div>
+    <>
+      <img className={mainProfilePhoto} src={logo} alt="" />
       <ContactsList
         {...props.profileBasic}
         {...props.profileList}
         className={'contacts'}>
       </ContactsList>
-    </div>
+    </>
   )
 }
 
