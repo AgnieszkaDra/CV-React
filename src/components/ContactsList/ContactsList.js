@@ -11,23 +11,32 @@ export const ContactsList = (props) => {
 
   const showObject = (el) => {
     return Object.entries(el).map(([key, values]) => {
-      return <>{<a href={`//${values}`} target='blank'> {values} </a>}</>
+      return <>
+        <a
+          href={`//${values}`}
+          target={'blank'}
+          className={'font-main'}
+        >
+          {values}
+        </a>
+      </>
     })
   }
 
   const renderListItem = (item, i) => {
-    return <span className={`${liClass ? `${liClass}` : ''}`}>{item[0]}{showObject(item[1])}</span>
+    return <li className={`${liClass ? `${liClass}` : ''}`}><span className={'font-contrast'}>{item[0]}</span>{showObject(item[1])}</li>
   }
 
   return (
     <>
-      <span className={classes.list}>
+      <ul className={classes.list}>
         {props.list.map((item, i) => {
           return renderListItem(item, i)
         })}
-      </span>
-      <div className={`${classes.name} namehj`} > { props.name } </div>
-      <span className={classes.title}>{props.title}</span>
+      </ul>
+      <div className={classes.name + ' font-contrast'}>{ props.name } </div>
+      <br></br>
+      <div className={classes.title + ' font-main'}>{props.title}</div>
     </>
 
   )

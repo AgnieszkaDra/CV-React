@@ -12,8 +12,9 @@ export default class CV extends React.Component {
       <>
         <div className={'container'}>
           <Header
-            {...data}
-            className={'header'}>
+            {...data.infoProfile}
+            className={'header'}
+          >
           </Header>
           <Main {...data}></Main>
         </div>
@@ -23,8 +24,5 @@ export default class CV extends React.Component {
 }
 
 CV.propTypes = {
-  infoProfile: PropTypes.shape().isRequired,
-  experience: PropTypes.shape().isRequired,
-  skills: PropTypes.shape().isRequired,
-  projects: PropTypes.shape().isRequired
+  infoProfile: PropTypes.shape().isRequired
 }

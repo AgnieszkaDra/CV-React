@@ -1,10 +1,8 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
-
-import MainProfile from '../MainProfile/MainProfile'
-// import Contacts from '../Contacts/Contacts'
-
+import logo from '../assets/face.jpg'
+// import MainProfile from '../MainProfile/MainProfile'
+import ContactsList from '../ContactsList/ContactsList'
 import classes from './styles.module.css'
 
 export const Header = (props) => {
@@ -12,28 +10,31 @@ export const Header = (props) => {
     className
   } = props
 
-  const headerClass = classes[className]
   return (
-    <header className={`${classes.root}${className ? ` ${headerClass}` : ''}`}>
-      <MainProfile
-        {...props.infoProfile}
-        className={'mainProfile'}>
-      </MainProfile>
-      {/* <Contacts
-        {...props.infoProfile.profileList}
-        {...props.infoProfile.profileBasic}
-        className={'contacts'}>
-      </Contacts> */}
+    <header className={`${classes.root}${className ? ` ${className}` : ''}`}>
+      <div
+        className={classes.imageContainer}
+      >
+      </div>
+      <img
+        className={classes.mainProfilePhoto}
+        src={logo}
+        alt={'Logo'}
+      />
+      <ContactsList
+        {...props.profileBasic}
+        {...props.profileList}
+        className={'contacts'}
+      >
+      </ContactsList>
     </header>
-
   )
 }
 
 Header.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node,
-  variant: PropTypes.oneOf(['h1', 'h3', 'button']),
-  infoProfile: PropTypes.object
+  profileBasic: PropTypes.object,
+  profileList: PropTypes.object
 }
 
 export default Header

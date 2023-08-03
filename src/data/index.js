@@ -4,7 +4,6 @@ import skills from './skills'
 import projects from './projects'
 
 export const data = {
-
   infoProfile,
   experience,
   skills,
