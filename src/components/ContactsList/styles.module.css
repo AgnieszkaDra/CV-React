@@ -1,7 +1,7 @@
 @import '/src/styles/index.scss';
 
 .root {
-
+  border: 2px solid pink;
 }
 
 .list {
