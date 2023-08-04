@@ -34,9 +34,8 @@ export const ContactsList = (props) => {
           return renderListItem(item, i)
         })}
       </ul>
-      <div className={classes.name + ' font-contrast'}>{ props.name } </div>
-      <br></br>
-      <div className={classes.title + ' font-main'}>{props.title}</div>
+      <h1 className={classes.name + ' font-contrast'}>{ props.name } </h1>
+      <h3 className={classes.title + ' font-main'}>{props.title}</h3>
     </>
 
   )

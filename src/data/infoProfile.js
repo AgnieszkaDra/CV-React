@@ -21,6 +21,10 @@ const infoProfile = {
         icon={faGlobe}
         key={'ndsjdn'}/>, { portfolio: '' }]
     ]
+  },
+  profileDescription: {
+    sectionTitle: 'Profile',
+    description: 'This is my passion and wish to be also my work'
   }
 
 }

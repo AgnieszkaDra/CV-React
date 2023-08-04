@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import logo from '../assets/face.jpg'
 // import MainProfile from '../MainProfile/MainProfile'
 import ContactsList from '../ContactsList/ContactsList'
+import Description from '../Decription/Description'
 import classes from './styles.module.css'
 
 export const Header = (props) => {
@@ -27,14 +28,18 @@ export const Header = (props) => {
         className={'contacts'}
       >
       </ContactsList>
-    </header>
+      <Description
+       {...props.profileDescription}
+      ></Description>
+     </header>
   )
 }
 
 Header.propTypes = {
   className: PropTypes.string,
   profileBasic: PropTypes.object,
-  profileList: PropTypes.object
+  profileList: PropTypes.object,
+  profileDescription: PropTypes.object
 }
 
 export default Header

@@ -1,0 +1,19 @@
+.root {
+  
+ 
+}
+
+.p {
+  font-size: 12px;
+  text-align: start;
+  font-weight: 900;
+}
+
+@media(min-width: 768px) {
+  .p {
+  
+    left: 35%;
+    top: 60%;
+    position: absolute;
+  }
+}
