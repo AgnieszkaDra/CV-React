@@ -24,7 +24,7 @@ const infoProfile = {
   },
   profileDescription: {
     sectionTitle: 'Profile',
-    description: 'This is my passion and wish to be also my work'
+    description: 'Passionate and still developing junior frontend developer with attention to problem solving skills.'
   }
 
 }

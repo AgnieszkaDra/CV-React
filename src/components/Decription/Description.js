@@ -4,7 +4,10 @@ import classes from './styles.module.css'
 
 export const Description = (props) => {
   return (
-    <p className={classes.p}>{props.sectionTitle}{props.description}</p>
+    <>
+    <h3 className={classes.h3}>{props.sectionTitle}</h3>
+    <p className={classes.p}>{props.description}</p>
+    </>
   )
 }
 

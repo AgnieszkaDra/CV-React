@@ -3,17 +3,34 @@
  
 }
 
+.h3 {
+  font-size: calc(13px + 1vh); 
+}
+
 .p {
+  font-size: calc(10px + 1vh); 
   font-size: 12px;
   text-align: start;
   font-weight: 900;
 }
 
+
+
 @media(min-width: 768px) {
   .p {
-  
-    left: 35%;
-    top: 60%;
+    font-size: calc(13px + 1.5vh); 
+    left: 42%;
+    top: 76%;
     position: absolute;
+  }
+}
+
+
+@media(min-width: 768px) {
+  .h3{
+    left: 42%;
+    top: 70%;
+    position: absolute;
+    font-size: calc(12px + 1.5vh); 
   }
 }
