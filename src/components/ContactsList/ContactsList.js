@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
+import Typography from '../Typography/Typography'
 import classes from './styles.module.css'
 
 export const ContactsList = (props) => {
@@ -34,8 +36,20 @@ export const ContactsList = (props) => {
           return renderListItem(item, i)
         })}
       </ul>
-      <h1 className={classes.name + ' font-contrast'}>{ props.name } </h1>
-      <h3 className={classes.title + ' font-main'}>{props.title}</h3>
+      <Typography
+        className={classes.name}
+        variant={'h1'}
+        color={'black'}
+      >
+        { props.name }
+      </Typography>
+      <Typography
+        className={classes.title}
+        variant={'h2'}
+        color={'white'}
+      >
+        { props.title }
+      </Typography>
     </>
 
   )

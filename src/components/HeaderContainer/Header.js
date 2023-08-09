@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import logo from '../assets/face.jpg'
+import logo from './assets/face.jpg'
 // import MainProfile from '../MainProfile/MainProfile'
 import ContactsList from '../ContactsList/ContactsList'
 import Description from '../Decription/Description'
@@ -19,7 +19,7 @@ export const Header = (props) => {
       </div>
       <img
         className={classes.mainProfilePhoto}
-        src={logo}
+        src= {logo}
         alt={'Logo'}
       />
       <ContactsList
@@ -29,9 +29,10 @@ export const Header = (props) => {
       >
       </ContactsList>
       <Description
-       {...props.profileDescription}
-      ></Description>
-     </header>
+        {...props.profileDescription}
+      >
+      </Description>
+    </header>
   )
 }
 

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
 
-const Section = (props) => {
+export const Section = (props) => {
   const {
     className,
     sectionTitle,

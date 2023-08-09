@@ -65,6 +65,18 @@ a:hover {
   color: $color-font-contrast
 }
 
+.title {
+  font-size: calc(13px + 1vh); 
+  color: $color-font-contrast;
+}
+
+.paragraph {
+  font-size: calc(10px + 1vh); 
+  font-size: 12px;
+  text-align: start;
+  font-weight: 900;
+}
+
 
 
 

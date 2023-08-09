@@ -1,12 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Typography from '../Typography/Typography'
 import classes from './styles.module.css'
 
 export const Description = (props) => {
   return (
     <>
-    <h3 className={classes.h3}>{props.sectionTitle}</h3>
-    <p className={classes.p}>{props.description}</p>
+      <Typography
+        className={classes.title}
+        variant={'h3'}
+      >
+        { props.sectionTitle }
+      </Typography>
+      <Typography
+        className={classes.paragraph}
+        variant={'p'}
+      >
+        { props.description }
+      </Typography>
     </>
   )
 }

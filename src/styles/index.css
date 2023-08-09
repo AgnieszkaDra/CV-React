@@ -61,4 +61,16 @@ a:hover {
   color: rgb(57, 57, 57);
 }
 
+.title {
+  font-size: calc(13px + 1vh);
+  color: rgb(57, 57, 57);
+}
+
+.paragraph {
+  font-size: calc(10px + 1vh);
+  font-size: 12px;
+  text-align: start;
+  font-weight: 900;
+}
+
 /*# sourceMappingURL=index.css.map */

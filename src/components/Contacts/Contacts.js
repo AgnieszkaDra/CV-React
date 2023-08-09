@@ -14,7 +14,8 @@ export const Contacts = (props) => {
     <div className={`${classes.root}${className ? ` ${ulClass}` : ''}`}>
       <ContactsList
         {...props}
-        className={'listItem'}>
+        className={'listItem'}
+        >
       </ContactsList>
     </div>
 

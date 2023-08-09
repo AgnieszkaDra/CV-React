@@ -1,7 +1,7 @@
 import React from 'react'
 import data from '../../data'
 
-import Section from '../../shared/section'
+import Section from '../shared/Section'
 import Experience from '../Experience/Experience'
 import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'

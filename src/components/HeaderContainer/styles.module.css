@@ -26,7 +26,7 @@ img {
 }
 
 .imageContainer {
-  background-image: url('/src/components/assets/face.jpg');
+  background-image: url('./assets/face.jpg');
   width: 50%;
   height: 100%;
   -webkit-clip-path: inset(5% 7% 7% 7%);
