@@ -1,6 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Typography from '../Typography/Typography'
+import { Link } from '../Link'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 import classes from './styles.module.css'
 
@@ -28,14 +32,16 @@ export const Experience = (props) => {
     if (company && companyLink) {
       return (
         <div className={'company'}>
-          <a
-            href={companyLink}
-            target={'blank'}
-            rel={'noreferrer'}
+          <FontAwesomeIcon
+            icon={faGlobe}
+            key={'kk'}
+          />
+          <Link
+            key={'njnj'}
+            values={`${companyLink}`}
           >
-            {company}
-          </a>
-          {date} {' '}
+          </Link>
+          {date} <br></br>
           {companyDescription}
         </div>
       )

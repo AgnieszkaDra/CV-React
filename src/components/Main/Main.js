@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import data from '../../data'
 
 import Section from '../shared/Section'
@@ -6,9 +7,14 @@ import Experience from '../Experience/Experience'
 import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'
 
-export const Main = () => {
+import classes from './styles.module.css'
+
+export const Main = (props) => {
+  const {
+    className
+  } = props
   return (
-    <main>
+    <main className={`${classes.root}${className ? ` ${className}` : ''}`}>
       <Section
         {...data}
         sectionTitle={'Work and Experience'}
@@ -32,6 +38,10 @@ export const Main = () => {
       </Section>
     </main>
   )
+}
+
+Main.propTypes = {
+  className: PropTypes.string
 }
 
 export default Main

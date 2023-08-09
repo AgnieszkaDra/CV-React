@@ -13,7 +13,7 @@ const experience = {
       company: 'Drofarm, Dr.Max',
       description: 'It will be great to connect my pharmaceutical education with programming medical apps.In the link below there is form writing by agency based on my form project',
       companyLink: 'https://apteka-namyslow.pl/formularz/',
-      date: '2014 - Present'
+      date: '2014 - present'
     }
   ]
 }
