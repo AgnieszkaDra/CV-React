@@ -6,12 +6,18 @@
   color: #fff;
 }
 
-.name {
+.title{
 
     font-size: 32px;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
+.center {
+  justify-content: center;
+}

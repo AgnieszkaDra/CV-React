@@ -1,6 +1,7 @@
 import React, { Children } from 'react'
 
 import PropTypes from 'prop-types'
+import Typography from '../Typography/Typography'
 
 import classes from './styles.module.css'
 
@@ -13,16 +14,20 @@ export const Section = (props) => {
 
   return (
     <section className={`section ${(className || ' ') && `${classes.root}`}`}>
-      <h2>
-        {sectionTitle}
-        <div>
-          {Children.map(children, child =>
-            <div>
-              {child}
-            </div>
-          )}
-        </div>
-      </h2>
+      <Typography
+        variant={'h2'}
+        color={'black'}
+        style={{ justifyContent: 'center' }}
+      >
+        { sectionTitle }
+      </Typography>
+      <div>
+        {Children.map(children, child =>
+          <div>
+            {child}
+          </div>
+        )}
+      </div>
     </section>
   )
 }

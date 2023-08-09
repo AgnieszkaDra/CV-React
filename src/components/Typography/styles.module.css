@@ -45,12 +45,6 @@
   text-align: start;
 }
 
-.button {
-  font-family: Roboto;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0.46000000834465027px;
-  text-align: left;
+.center {
+  justify-content: center;
 }

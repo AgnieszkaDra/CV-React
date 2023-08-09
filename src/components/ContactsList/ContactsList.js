@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Typography from '../Typography/Typography'
+
 import classes from './styles.module.css'
+import { Link } from '../Link'
 
 export const ContactsList = (props) => {
   const {
@@ -13,15 +15,13 @@ export const ContactsList = (props) => {
 
   const showObject = (el) => {
     return Object.entries(el).map(([key, values]) => {
-      return <>
-        <a
-          href={`//${values}`}
-          target={'blank'}
-          className={'font-main'}
+      return (
+        <Link
+          key={'njnj'}
+          values={`${values}`}
         >
-          {values}
-        </a>
-      </>
+        </Link>
+      )
     })
   }
 

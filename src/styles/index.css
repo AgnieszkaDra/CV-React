@@ -38,8 +38,7 @@ a:hover {
   background: pink;
   max-width: 100%;
   display: grid;
-  grid-template-rows: 1fr 5fr;
-  grid-template-columns: 1fr;
+  min-height: 500px;
   margin: 0 auto;
 }
 
