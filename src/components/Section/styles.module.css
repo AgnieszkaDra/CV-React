@@ -3,7 +3,7 @@
   margin: 0 auto;
  
   text-align: center;
-  color: #fff;
+  
 }
 
 .title{
@@ -18,6 +18,14 @@
 
 }
 
-.center {
-  justify-content: center;
+.sectionChild {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.sectionChild > * {
+  margin-bottom: 40px;
 }

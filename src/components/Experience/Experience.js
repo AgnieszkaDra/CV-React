@@ -6,8 +6,6 @@ import { Link } from '../Link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
-import classes from './styles.module.css'
-
 export const Experience = (props) => {
   const {
     experienceList
@@ -15,35 +13,39 @@ export const Experience = (props) => {
 
   const renderListItem = (item, i) => {
     return (
-      <div className={'item'}>
+      <>
         <Typography
           className={'job-title'}
           variant={'h3'}
-          color={'black'}
+          color={'whitesmoke'}
         >
           { item.title }
         </Typography>
         {renderCompanySection(item.company, item.companyLink, item.date, item.description)}
-      </div>
+      </>
     )
   }
 
   const renderCompanySection = (company, companyLink, date, companyDescription) => {
     if (company && companyLink) {
       return (
-        <div className={'company'}>
-          <FontAwesomeIcon
-            icon={faGlobe}
-            key={'kk'}
-          />
-          <Link
-            key={'njnj'}
-            values={`${companyLink}`}
-          >
-          </Link>
-          {date} <br></br>
-          {companyDescription}
-        </div>
+        <>
+          <div className={'company'}>
+            <FontAwesomeIcon
+              icon={faGlobe}
+              key={'kk'}
+            />
+            <Link
+              key={'njnj'}
+              values={`${companyLink}`}
+            >
+            </Link>
+          </div>
+          <div>
+            {date} <br></br>
+            {companyDescription}
+          </div>
+        </>
       )
     }
     return null
@@ -51,11 +53,9 @@ export const Experience = (props) => {
 
   return (
 
-    <div className={`${classes.root}`} >
-      {experienceList.map((item, i) => {
-        return renderListItem(item, i)
-      })}
-    </div>
+    experienceList.map((item, i) => {
+      return renderListItem(item, i)
+    })
 
   )
 }

@@ -4,24 +4,13 @@
 
     text-align: center;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
 
  
-
-.root div div {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 120px  120px  120px;
-  grid-template-areas:
-             "name ....  date"
-             "description description description";
-
-  color: #444;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
 
 
 

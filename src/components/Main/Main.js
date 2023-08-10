@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import data from '../../data'
 
-import Section from '../shared/Section'
+import Section from '../Section/Section'
 import Experience from '../Experience/Experience'
 import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'

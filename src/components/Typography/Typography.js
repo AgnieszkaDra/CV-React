@@ -28,6 +28,7 @@ export const Typography = (props) => {
     return (
       <h2
         className={`${classes.root}${className ? ` ${className}` : ''}${variantClass ? ` ${variantClass}` : ''}`}
+        style={{ color: colorFont }}
         {...otherProps}
     >
         {children}
@@ -37,6 +38,7 @@ export const Typography = (props) => {
     return (
       <h3
         className={`${classes.root}${className ? ` ${className}` : ''}${variantClass ? ` ${variantClass}` : ''}`}
+        style={{ color: colorFont }}
         {...otherProps}
     >
         {children}
@@ -46,6 +48,7 @@ export const Typography = (props) => {
     return (
       <p
         className={`${classes.root}${className ? ` ${className}` : ''}${variantClass ? ` ${variantClass}` : ''}`}
+        style={{ color: colorFont }}
         {...otherProps}
     >
         {children}
