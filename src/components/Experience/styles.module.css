@@ -10,15 +10,64 @@
     
   }
 
-  .sectionChild {
+  .list {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    padding: 30px;
+    padding: 0px 30px;
   }
 
+  .list > * {
+    margin-bottom: 40px;
+  }
 
+  .listItem {
+    z-index: 100;
+  }
+
+  .listItem > * {
+    margin-bottom: 10px;
+    z-index: 100;
+  }
+
+  .companyWeb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .companyWeb > * {
+    margin-right: 10px;
+  }
+
+  .companyDescription {
+    text-align: start;
+    position: relative;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+  }
+
+  .imageContainer {
+    display: none;
+  }
+  
+  @media(min-width:768px) {
+    .imageContainer {
+      width: 300px;
+      min-height: 300px;
+      display: block;
+      -webkit-clip-path: polygon(42% 0, 91% 28%, 35% 100%, 0 100%, 0 0);
+      clip-path: polygon(42% 0, 91% 28%, 35% 100%, 0 100%, 0 0);
+      background-color: rgb(219, 168, 177);
+      float: right;
+      left:0;
+      top: 0%;
+      position: absolute;
+      z-index: auto;
+    }
+  }
 
 
 

@@ -15,8 +15,8 @@ export const Experience = (props) => {
 
   const renderListItem = (item, i) => {
     return (
-      <ul className={classes.sectionChild}>
-        <li>
+      <ul className={classes.list}>
+        <li className={classes.listItem}>
           <Typography
             className={'job-title'}
             variant={'h3'}
@@ -34,7 +34,7 @@ export const Experience = (props) => {
     if (company && companyLink) {
       return (
         <>
-          <div className={'company'}>
+          <div className={classes.companyWeb}>
             <FontAwesomeIcon
               icon={faGlobe}
               key={'kk'}
@@ -45,8 +45,7 @@ export const Experience = (props) => {
             >
             </Link>
           </div>
-          <div>
-            {date} <br></br>
+          <div className={classes.companyDescription}>
             {companyDescription}
           </div>
         </>
@@ -56,10 +55,15 @@ export const Experience = (props) => {
   }
 
   return (
-
-    experienceList.map((item, i) => {
-      return renderListItem(item, i)
-    })
+    <>
+      <div
+        className={classes.imageContainer}
+      >
+      </div>
+      {experienceList.map((item, i) => {
+        return renderListItem(item, i)
+      })}
+    </>
 
   )
 }
