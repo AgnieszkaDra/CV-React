@@ -6,6 +6,8 @@ import { Link } from '../Link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
+import classes from './styles.module.css'
+
 export const Experience = (props) => {
   const {
     experienceList
@@ -13,16 +15,18 @@ export const Experience = (props) => {
 
   const renderListItem = (item, i) => {
     return (
-      <>
-        <Typography
-          className={'job-title'}
-          variant={'h3'}
-          color={'whitesmoke'}
-        >
-          { item.title }
-        </Typography>
-        {renderCompanySection(item.company, item.companyLink, item.date, item.description)}
-      </>
+      <ul className={classes.sectionChild}>
+        <li>
+          <Typography
+            className={'job-title'}
+            variant={'h3'}
+            color={'whitesmoke'}
+          >
+            { item.title }
+          </Typography>
+          {renderCompanySection(item.company, item.companyLink, item.date, item.description)}
+        </li>
+      </ul>
     )
   }
 

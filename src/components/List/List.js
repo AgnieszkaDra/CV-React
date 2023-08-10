@@ -10,12 +10,12 @@ export const List = (props) => {
   } = props
 
   return (
-    <div
+    <ul
       className={`${classes.root}${className ? ` ${className}` : ''}`}
       {...otherProps}
     >
 
-    </div>
+    </ul>
   )
 }
 

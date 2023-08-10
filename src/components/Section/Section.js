@@ -21,13 +21,11 @@ export const Section = (props) => {
       >
         { sectionTitle }
       </Typography>
-      <ul>
-        {Children.map(children, child =>
-          <li className={classes.sectionChild}>
-            {child}
-          </li>
-        )}
-      </ul>
+      {Children.map(children, child =>
+        <>
+          { child }
+        </>
+      )}
     </section>
   )
 }
