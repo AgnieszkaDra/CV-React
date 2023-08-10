@@ -1,7 +1,7 @@
 @import '/src/styles/index.scss';
 
 .root {
-  border: 2px solid pink;
+  color: whitesmoke;
 }
 
 .list {
@@ -30,16 +30,17 @@
   }
 }
 
-.list > * {
+.list>* {
   display: flex;
   font-size: calc(5px + 1vh);
   padding-top: calc(0.2% + 1vh);
   padding-bottom: calc(0.2% + 1vh);
-  padding-right: calc(0.2% + 1vh);;
+  padding-right: calc(0.2% + 1vh);
+  ;
 }
 
 @media(min-width:768px) {
-  .list > * {
+  .list>* {
     font-size: calc(5px + 1.5vh);
     padding-top: calc(0.5% + 1vh);
     padding-bottom: calc(0.5% + 1vh);
@@ -48,70 +49,44 @@
 }
 
 @media(min-width:1000px) {
-  .list > * {
-    font-size: calc(8px + 1.5vh);
+  .list>* {
+    font-size: calc(8px + 1.5vhvh);
     width: 100%;
   }
 }
 
 @media(min-width:1000px) {
-  .list > * span{
-  padding-right: calc(0.8% + 1.5vh);
-}
+  .list>* span {
+    padding-right: calc(0.8% + 1.5vh);
+  }
 }
 
 @media(min-width:1000px) {
-  .list > * a{
-  display: inline-block;
+  .list>* a {
+    display: inline-block;
+  }
 }
-}
-.name {
-  font-size: calc(12px + 1vh); 
-  
+
+/* .name {
+  font-size: calc(12px + 1vh);
+
 }
 
 .title {
-  font-size: calc(10px + 1vh); 
-}
-
-@media(max-width:768px) {
-  .name {
-    padding-bottom: 5%;
-  }
-  .title {
-    padding-bottom: 5%;
-  }
-}
+  font-size: calc(10px + 1vh);
+} */
 
 @media(min-width: 768px) {
   .name {
-    font-size: calc(25px + 1.2vh);
     left: 48%;
     top: 45%;
     position: absolute;
   }
 
   .title {
-    font-size: calc(20px + 1.2vh);
     left: 45%;
     top: 55%;
     position: absolute;
   }
-  
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,9 +1,8 @@
 .root {
-  
-
   background: rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
   text-align: center;
-  color: #fff;
+  color: gray;
   margin: 0 auto;
   
 }

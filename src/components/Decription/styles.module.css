@@ -1,32 +1,30 @@
-.root {
-  
- 
-}
+.root {}
 
 .title {
   font-size: calc(13px + 1vh);
- 
+
 }
 
 .paragraph {
-  font-size: calc(10px + 1vh); 
+  font-size: calc(10px + 1vh);
   font-size: 12px;
   text-align: start;
-  
+
 }
 
 
 
 @media(min-width: 768px) {
 
-  .title{
+  .title {
     left: 42%;
     top: 70%;
     position: absolute;
-    font-size: calc(12px + 1.5vh); 
+    font-size: calc(12px + 1.5vh);
   }
-    .paragraph {
-    font-size: calc(13px + 1.5vh); 
+
+  .paragraph {
+    font-size: calc(13px + 1.5vh);
     left: 42%;
     top: 76%;
     position: absolute;
@@ -34,4 +32,21 @@
 
 }
 
+.imageContainer {
+  display: none;
+}
 
+@media(min-width:768px) {
+  .imageContainer {
+    width: 300px;
+    min-height: 300px;
+    display: block;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 56% 100%, 0% 38%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 56% 100%, 0% 38%);
+    background-color: rgb(219, 168, 177);
+    float: right;
+    right:0;
+    top: 60%;
+    position: absolute;
+  }
+}

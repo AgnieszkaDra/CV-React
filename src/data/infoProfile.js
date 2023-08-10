@@ -19,7 +19,8 @@ const infoProfile = {
       // eslint-disable-next-line react/react-in-jsx-scope
       [<FontAwesomeIcon
         icon={faGlobe}
-        key={'ndsjdn'}/>, { portfolio: '' }]
+        key={'ndsjdn'}/>,
+      { portfolio: 'https://subtle-tarsier-eedb30.netlify.app/' }]
     ]
   },
   profileDescription: {

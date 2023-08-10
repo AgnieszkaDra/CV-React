@@ -6,6 +6,10 @@ import classes from './styles.module.css'
 export const Description = (props) => {
   return (
     <>
+      <div
+        className={classes.imageContainer}
+      >
+      </div>
       <Typography
         className={classes.title}
         variant={'h3'}
