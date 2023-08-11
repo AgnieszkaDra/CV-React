@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Typography from '../Typography/Typography'
 
 import classes from './styles.module.css'
 
@@ -33,6 +34,13 @@ export const Projects = (props) => {
   return (
 
     <div className={`${classes.root}`} >
+      <Typography
+        className={'job-title'}
+        variant={'h3'}
+        color={'whitesmoke'}
+      >
+        { description }
+      </Typography>
       {description}
       {categories.map((item, i) => {
         return renderListItem(item, i)

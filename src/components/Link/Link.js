@@ -12,7 +12,8 @@ export const Link = (props) => {
     <>
       <a
         className={`${classes.root}${className ? ` ${className}` : ''}`}
-        href={`//${values}`}
+        // href={`//${values}`}
+        href={`${values}`}
         target={'blank'}
       >
         {values}

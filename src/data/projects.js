@@ -1,5 +1,5 @@
 export const projects = {
-  description: 'Projects, i have completed or still developing are listed below',
+  description: 'Projects, I have developed are listed below',
   categories: [
     {
       name: 'Pharmacy Website',

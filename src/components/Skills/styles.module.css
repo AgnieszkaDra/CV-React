@@ -1,9 +1,9 @@
 .root {
-  
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
-  text-align: center;
+  padding: 0 30px;
   color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .name {

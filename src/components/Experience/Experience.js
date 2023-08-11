@@ -24,13 +24,13 @@ export const Experience = (props) => {
           >
             { item.title }
           </Typography>
-          {renderCompanySection(item.company, item.companyLink, item.date, item.description)}
+          {renderCompanySection(item.company, item.companyLink, item.description)}
         </li>
       </ul>
     )
   }
 
-  const renderCompanySection = (company, companyLink, date, companyDescription) => {
+  const renderCompanySection = (company, companyLink, companyDescription) => {
     if (company && companyLink) {
       return (
         <>
