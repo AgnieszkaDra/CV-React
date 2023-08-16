@@ -79,6 +79,14 @@ a:hover {
   font-weight: 900;
 }
 
+.job-title {
+  color: pink;
+}
+
+.job-title:nth-child(even) {
+  color: #000;
+}
+
 
 
 

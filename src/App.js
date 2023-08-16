@@ -10,14 +10,12 @@ export default class CV extends React.Component {
   render () {
     return (
       <>
-        <div className={'container'}>
-          <Header
+        <Header
             {...data.infoProfile}
             className={'header'}
-          >
-          </Header>
-          <Main {...data}></Main>
-        </div>
+        >
+        </Header>
+        <Main {...data}></Main>
       </>
     )
   };

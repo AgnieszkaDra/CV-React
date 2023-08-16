@@ -25,17 +25,19 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
 }
 
 a:hover {
-  color: #00A0C6;
+  color: gray;
   text-decoration: none;
   cursor: pointer;
 }
 
 .container {
-  background: pink;
+  background-color: pink;
+  background: rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
   max-width: 100%;
   display: grid;
   min-height: 500px;
@@ -70,6 +72,14 @@ a:hover {
   font-size: 12px;
   text-align: start;
   font-weight: 900;
+}
+
+.job-title {
+  color: pink;
+}
+
+.job-title:nth-child(even) {
+  color: #000;
 }
 
 /*# sourceMappingURL=index.css.map */

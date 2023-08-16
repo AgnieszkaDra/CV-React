@@ -33,7 +33,7 @@ img {
 .imageContainer {
   background-image: url('./assets/face.jpg');
   width: 50%;
-  height: 100%;
+  min-height: 300px;
   -webkit-clip-path: inset(5% 7% 7% 7%);
   clip-path: inset(5% 7% 7% 7%);
   background-size: contain;
