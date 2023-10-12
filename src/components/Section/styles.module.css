@@ -1,19 +1,5 @@
-.root {
-  
-  margin: 0 auto;
-  position: relative;
-  z-index: 100;
-  margin-bottom: 10px;
+.avatarContainer {
+  border: 2px solid red;
 }
 
-.title{
-
-    font-size: 32px;
-    font-weight: 900;
-    margin-top: 0;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
+/*# sourceMappingURL=styles.module.css.map */
