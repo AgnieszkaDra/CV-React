@@ -1,33 +1,27 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons'
+
 const infoProfile = {
   profileBasic: { name: 'Agnieszka Dragańczyk', title: 'Junior Front End Developer' },
   profileList: {
     list: [
-      // eslint-disable-next-line react/react-in-jsx-scope
-      [<FontAwesomeIcon
-        icon={faEnvelope}
-        key={'kk'}
-      />,
-      { mail: 'agnieszka.127@interia.pl' }],
-      // eslint-disable-next-line react/react-in-jsx-scope
-      [<FontAwesomeIcon
-        icon={faPhone}
-        key={'kkk'}
-      />,
-      { phoneNumber: '+48 517 862 170' }],
-      // eslint-disable-next-line react/react-in-jsx-scope
-      [<FontAwesomeIcon
-        icon={faGlobe}
-        key={'ndsjdn'}/>,
-      { portfolio: 'https://subtle-tarsier-eedb30.netlify.app/' }]
+      {
+        icon: faEnvelope,
+        data: 'agnieszka.127@interia.pl'
+      },
+      {
+        icon: faPhone,
+        data: '+48 517 862 170'
+      },
+      {
+        icon: faGlobe,
+        data: 'https://subtle-tarsier-eedb30.netlify.app/'
+      }
     ]
   },
   profileDescription: {
-    sectionTitle: 'Profile',
-    description: 'Passionate and still developing junior frontend developer with attention to problem solving skills.'
+    name: 'Agnieszka Dragańczyk',
+    position: 'FRONTEND DEVELOPER - junior'
   }
-
 }
 
 export default infoProfile

@@ -1,9 +1,14 @@
-// .root {
-//     width: 100%;
-//     height: 100%;
-// }
+@import '../../styles/abstracts/';
+
+
 
 .avatarContainer {
-   border: 2px solid red;
-  
+width: 30%;
+ border: 3px solid pink;
+}
+
+.infoContainer {
+   width: 70%;
+   background-color: pink;
+   padding: 10px 0px;
 }

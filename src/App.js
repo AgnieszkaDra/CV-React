@@ -3,7 +3,7 @@ import './App.css'
 
 import Header from './components/Header'
 import Main from './components/Main/Main'
-import './styles/index.scss'
+
 import data from './data'
 import PropTypes from 'prop-types'
 

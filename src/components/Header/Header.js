@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import Section from '../Section/Section'
 import Avatar from './Avatar'
 import ContactsList from '../ContactsList/ContactsList'
-import Description from '../Decription/Description'
+import Description from '../Description/Description'
 import classes from './styles.module.css'
 
 export const Header = (props) => {
@@ -16,24 +16,28 @@ export const Header = (props) => {
   return (
     <header className={`${classes.header}${className ? ` ${className}` : ''}`}>
       <Section
-        className={'avatarContainer'}
-        content= {<Avatar className={'mainProfilePhoto'}></Avatar>}
-        >
-    </Section>
+        classNameSecond={'avatarContainer'}
+        content={<Avatar className={'mainProfilePhoto'}></Avatar>}
+      >
+      </Section>
+      <Section
+        classNameSecond={'infoContainer'}
+        content={
+          <>
+            <Description
+              {...props.profileDescription}
+            >
+            </Description>
+            <ContactsList
+              {...props.profileBasic}
+              {...props.profileList}
+              className={'contacts'}
+            >
+            </ContactsList>
 
-      <section>
-        <ContactsList
-          {...props.profileBasic}
-          {...props.profileList}
-          className={'contacts'}
-        >
-        </ContactsList>
-        <Description
-          {...props.profileDescription}
-        >
-        </Description>
-      </section>
-
+          </>}
+      >
+      </Section>
     </header>
   )
 }

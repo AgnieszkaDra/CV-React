@@ -5,13 +5,15 @@ import classes from './styles.module.css'
 
 export const Section = (props) => {
   const {
-    className,
+    classNameSecond,
     content
   } = props
 
+  const variantClass = classes[classNameSecond]
+
   return (
     <section
-      className={`${classes.root}${className ? ` ${classes.avatarContainer}` : ''}`}
+      className={`${variantClass ? ` ${variantClass}` : ''}`}
     >
       {content}
     </section>
@@ -19,7 +21,7 @@ export const Section = (props) => {
 }
 
 Section.propTypes = {
-  className: PropTypes.string,
+  classNameSecond: PropTypes.string,
   content: PropTypes.string
 }
 
