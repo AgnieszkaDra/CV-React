@@ -5,24 +5,27 @@ import classes from './styles.module.css'
 
 export const Section = (props) => {
   const {
-    classNameSecond,
-    content
+    classNameVariant,
+    content,
+    sectionTitle
   } = props
 
-  const variantClass = classes[classNameSecond]
+  const variantClass = classes[classNameVariant]
 
   return (
     <section
       className={`${variantClass ? ` ${variantClass}` : ''}`}
     >
+      {sectionTitle && <h4>{sectionTitle}</h4>}
       {content}
     </section>
   )
 }
 
 Section.propTypes = {
-  classNameSecond: PropTypes.string,
-  content: PropTypes.string
+  classNameVariant: PropTypes.string,
+  content: PropTypes.string,
+  sectionTitle: PropTypes.string
 }
 
 export default Section

@@ -11,15 +11,19 @@ import classes from './styles.module.css'
 
 export const Main = (props) => {
   const {
-    className
+    className,
+    classNameVariant
   } = props
+
+
   return (
     <main className={`${classes.root}${className ? ` ${className}` : ''}`}>
       <Section
         {...data}
         sectionTitle={'Work and Experience'}
+        content={<Experience {...data.experience}></Experience>}
+        classNameVariant= {'experience'}
       >
-        <Experience {...data.experience}></Experience>
       </Section>
       <Section
         {...data}
@@ -41,7 +45,7 @@ export const Main = (props) => {
 }
 
 Main.propTypes = {
-  className: PropTypes.string
+  classNameVariant: PropTypes.string
 }
 
 export default Main

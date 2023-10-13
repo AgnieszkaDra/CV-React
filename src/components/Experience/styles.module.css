@@ -1,75 +1,47 @@
+.headline {
+  display: flex;
+  position: relative;
+}
 
-.root {
+.icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: rgb(100, 98, 98);
+  border-radius: 50%;
+  border: 2px solid rgb(88, 196, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
 
+.title {
+  font-size: 1.4rem;
+  color: rgb(100, 98, 98);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
 
-    text-align: center;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
+.line {
+  border-bottom: 5px dotted rgb(88, 196, 219);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+}
 
-  .list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 0px 30px;
-  }
+.lineSecond {
+  position: absolute;
+  top: 340%;
+  left: -15%;
+  transform: rotate(-90deg);
+  border-bottom: 5px dotted rgb(88, 196, 219);
+  width: 30%;
+}
 
-  .list > * {
-    margin-bottom: 40px;
-  }
-
-  .listItem {
-    z-index: 100;
-  }
-
-  .listItem > * {
-    margin-bottom: 10px;
-    z-index: 100;
-  }
-
-  .companyWeb {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .companyWeb > * {
-    margin-right: 10px;
-  }
-
-  .companyDescription {
-    text-align: start;
-    position: relative;
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: center; */
-  }
-
-  .imageContainer {
-    display: none;
-  }
-  
-  @media(min-width:768px) {
-    .imageContainer {
-      width: 300px;
-      min-height: 300px;
-      display: block;
-      -webkit-clip-path: polygon(42% 0, 91% 28%, 35% 100%, 0 100%, 0 0);
-      clip-path: polygon(42% 0, 91% 28%, 35% 100%, 0 100%, 0 0);
-      background-color: rgb(219, 168, 177);
-      float: right;
-      left:0;
-      top: 0%;
-      position: absolute;
-      z-index: auto;
-    }
-  }
-
-
-
-
-
+/*# sourceMappingURL=styles.module.css.map */

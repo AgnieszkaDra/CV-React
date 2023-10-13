@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Typography from '../Typography/Typography'
+
 import { Link } from '../Link'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faBriefcase } from '@fortawesome/free-solid-svg-icons'
+
 
 import classes from './styles.module.css'
 
@@ -16,55 +17,36 @@ export const Experience = (props) => {
   const renderListItem = (item, i) => {
     return (
       <ul className={classes.list}>
-        <li className={classes.listItem}>
-          <Typography
-            className={'job-title'}
-            variant={'h3'}
-            color={'whitesmoke'}
+        <li
+          className={classes.listItem}
+          key={i}>
+          <h3 className={classes.title}>{item.title}</h3>
+          <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon>
+          <Link
+            key={i}
+            values={`${item.companyLink}`}
           >
-            { item.title }
-          </Typography>
-          {renderCompanySection(item.company, item.companyLink, item.description)}
+          </Link>
         </li>
       </ul>
     )
   }
-
-  const renderCompanySection = (company, companyLink, companyDescription) => {
-    if (company && companyLink) {
-      return (
-        <>
-          <div className={classes.companyWeb}>
-            <FontAwesomeIcon
-              icon={faGlobe}
-              key={'kk'}
-            />
-            <Link
-              key={'njnj'}
-              values={`${companyLink}`}
-            >
-            </Link>
-          </div>
-          <div className={classes.companyDescription}>
-            {companyDescription}
-          </div>
-        </>
-      )
-    }
-    return null
-  }
-
   return (
     <>
-      <div
-        className={classes.imageContainer}
-      >
+      <div className={classes.headline}>
+        <div
+          className={classes.icon}
+        >
+          <FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>
+        </div>
+        <h4 className={classes.title}>EXPERIENCE</h4>
+        <div className={classes.line}></div>
+        <div className={classes.lineSecond}></div>
       </div>
       {experienceList.map((item, i) => {
         return renderListItem(item, i)
       })}
     </>
-
   )
 }
 

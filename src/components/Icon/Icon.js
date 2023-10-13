@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import classes from './styles.module.css'
 import PropTypes from 'prop-types'
 
 export const Icon = (props) => {
@@ -8,7 +9,7 @@ export const Icon = (props) => {
   } = props
 
   return (
-    <FontAwesomeIcon icon={icon}></FontAwesomeIcon>
+    <FontAwesomeIcon icon={icon} className={classes.icon}></FontAwesomeIcon>
   )
 }
 

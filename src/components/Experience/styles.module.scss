@@ -1,0 +1,43 @@
+@import '../../styles/abstracts/';
+
+.headline {
+    display: flex;
+    position: relative;
+}
+
+.icon{
+  
+    display: block;
+    width: 40px;
+    height: 40px;
+   
+    color: $color-font-main;
+    border-radius: 50%;
+    border: 2px solid $color-contrast;
+    @include flexAbsoluteCenter;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 1.4rem;
+    color: $color-font-main;
+    margin: 0;
+    @include flexAbsoluteCenter;
+    margin-right: 30px;
+}
+
+.line {
+    border-bottom: 5px dotted $color-contrast;
+    width: 60%;
+    @include flexAbsoluteCenter;
+    transform: translateY(-50%);
+}
+
+.lineSecond {
+    position: absolute;
+    top: 340%;
+    left: -15%;
+    transform: rotate(-90deg);
+    border-bottom: 5px dotted $color-contrast;
+    width: 30%;
+}

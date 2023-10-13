@@ -8,7 +8,7 @@ import data from './data'
 import PropTypes from 'prop-types'
 
 export default class CV extends React.Component {
-  render () {
+  render() {
     return (
       <div className={'container'}>
         <Header
@@ -16,7 +16,11 @@ export default class CV extends React.Component {
           className={'header'}
         >
         </Header>
-        <Main {...data}></Main>
+        <Main
+          {...data}
+          className={'main'}
+        >
+        </Main>
       </div>
     )
   };

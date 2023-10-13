@@ -10,22 +10,23 @@ import classes from './styles.module.css'
 
 export const Header = (props) => {
   const {
-    className
+    classNameVariant
   } = props
 
   return (
-    <header className={`${classes.header}${className ? ` ${className}` : ''}`}>
+    <header className={`${classes.header}${classNameVariant ? ` ${classNameVariant}` : ''}`}>
       <Section
-        classNameSecond={'avatarContainer'}
+        classNameVariant={'avatarContainer'}
         content={<Avatar className={'mainProfilePhoto'}></Avatar>}
       >
       </Section>
       <Section
-        classNameSecond={'infoContainer'}
+        classNameVariant={'infoContainer'}
         content={
           <>
             <Description
               {...props.profileDescription}
+              className = {'basicData'}
             >
             </Description>
             <ContactsList
@@ -43,7 +44,7 @@ export const Header = (props) => {
 }
 
 Header.propTypes = {
-  className: PropTypes.string,
+  classNameVariant: PropTypes.string,
   profileBasic: PropTypes.object,
   profileList: PropTypes.object,
   profileDescription: PropTypes.object
