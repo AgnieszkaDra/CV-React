@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import { Link } from '../Link'
+import Icon from '../Icon'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe, faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faClock } from '@fortawesome/free-solid-svg-icons'
 import classes from './styles.module.css'
 
 export const Experience = (props) => {
@@ -16,12 +15,21 @@ export const Experience = (props) => {
 
   const renderListItem = (item, i) => {
     return (
-      <ul className={`${classes.list} padding-37`}>
+      <ul className={classes.list}>
         <li
-          className={classes.list__item}
-          key={i}>
+          className={`${classes.list__item}${classes.information}`}
+          key={i}
+        >
           <h3 className={`${classes.title} ${classes.experienceTitle}`}>{item.title}</h3>
-          <div className={`${classes.icon} ${classes.globe}`}>
+          <div className={classes.date}>
+            <Icon
+              icon={faClock}
+              className={classes.date__icon}
+            >
+            </Icon>
+            <h4 className={classes.date__date}>{item.date}</h4>
+          </div>
+          {/* <div className={`${classes.icon} ${classes.globe}`}>
             <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon>
           </div>
           <Link
@@ -29,7 +37,13 @@ export const Experience = (props) => {
             values={`${item.companyLink}`}
             className={classes.link}
           >
-          </Link>
+          </Link> */}
+        </li>
+        <li
+          className={`${classes.list__item}${classes.description}`}
+          key={i}
+        >
+
         </li>
       </ul>
     )

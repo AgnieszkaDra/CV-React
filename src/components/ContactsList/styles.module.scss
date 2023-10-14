@@ -25,12 +25,11 @@
        display: flex;
        justify-content: flex-end;
        padding: 5px;
-       > * {
-        padding: 2px;
-       }
+      
      }
      &__link {
         font-size: 1.2rem;
+        @include flexAbsoluteCenter;
      }
   
      }

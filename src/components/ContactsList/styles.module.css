@@ -23,11 +23,11 @@
   justify-content: flex-end;
   padding: 5px;
 }
-.list__element > * {
-  padding: 2px;
-}
 .list__link {
   font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.module.css.map */
