@@ -1,43 +1,144 @@
 @import '../../styles/abstracts/';
 
 .headline {
-    display: flex;
-    position: relative;
+    display: grid;
+    grid-template-columns: 7% 23% 70%;
+    grid-template-areas:
+        'iconSection titleSection lineSection';
+    padding: 30px 0 30px 0;
 }
 
-.icon{
-  
+
+.icon {
     display: block;
     width: 40px;
     height: 40px;
-   
     color: $color-font-main;
+    @include flexAbsoluteCenter;
+}
+
+.icon.briefCase {
     border-radius: 50%;
     border: 2px solid $color-contrast;
-    @include flexAbsoluteCenter;
     margin-right: 10px;
+    @include flexAbsoluteCenter;
+}
+
+.icon.globe {
+    grid-area: icon;
 }
 
 .title {
-    font-size: 1.4rem;
     color: $color-font-main;
     margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sectionTitle {
+    font-size: 1.4rem;
+}
+
+.experienceTitle {
+    font-size: 1rem;
+    grid-area: title;
+}
+
+.container {
+    position: relative;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.list {
+    height: 150px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+
+
+    &__item {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "icon link"
+
+    }
+}
+
+.link {
+    grid-area: link;
     @include flexAbsoluteCenter;
-    margin-right: 30px;
+}
+
+
+
+.lineCont {
+
+    grid-area: lineSection;
+    @include flexAbsoluteCenter;
 }
 
 .line {
-    border-bottom: 5px dotted $color-contrast;
-    width: 60%;
-    @include flexAbsoluteCenter;
-    transform: translateY(-50%);
+    margin: 0;
+    border: 2px dotted $color-contrast;
+    grid-column: 3/4;
+    width: 100%;
 }
 
 .lineSecond {
     position: absolute;
-    top: 340%;
-    left: -15%;
+    top: 400%;
+    left: 0%;
     transform: rotate(-90deg);
-    border-bottom: 5px dotted $color-contrast;
-    width: 30%;
+    border-bottom: 2px solid $color-contrast;
+    width: 300px;
+}
+
+.lineThird {
+    position: absolute;
+    top: 75px;
+    left: 20px;
+    transform: translateX(-150px) translateY(150px) rotate(-90deg);
+    box-sizing: border-box;
+    border: 0.2px solid $color-font-main;
+    width: 300px;
+
+    &__dots {
+        width: 100%;
+        position: relative;
+        border: none;
+
+
+    }
+
+    .dot {
+        width: 9px;
+        height: 9px;
+        background-color: $color-contrast;
+        /* Change the color of the circles as needed */
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        /* Vertically center the circle on the line */
+        transform: translateX(-50%) translateY(-50%);
+
+        &:nth-child(1) {
+            left: 0%;
+        }
+
+        &:nth-child(2) {
+            left: 50%;
+        }
+
+        &:nth-child(3) {
+            left: 100%;
+        }
+
+    }
 }

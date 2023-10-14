@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import classes from './styles.module.css'
 
 export const Description = (props) => {
-
   const {
     className,
     name,
@@ -23,6 +22,7 @@ export const Description = (props) => {
 }
 
 Description.propTypes = {
+  className: PropTypes.string,
   name: PropTypes.string,
   position: PropTypes.string
 }

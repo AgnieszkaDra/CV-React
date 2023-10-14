@@ -1,6 +1,8 @@
 .headline {
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: 7% 23% 70%;
+  grid-template-areas: "iconSection titleSection lineSection";
+  padding: 30px 0 30px 0;
 }
 
 .icon {
@@ -8,40 +10,124 @@
   width: 40px;
   height: 40px;
   color: rgb(100, 98, 98);
-  border-radius: 50%;
-  border: 2px solid rgb(88, 196, 219);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon.briefCase {
+  border-radius: 50%;
+  border: 2px solid rgb(88, 196, 219);
   margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon.globe {
+  grid-area: icon;
 }
 
 .title {
-  font-size: 1.4rem;
   color: rgb(100, 98, 98);
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-right: 30px;
 }
 
-.line {
-  border-bottom: 5px dotted rgb(88, 196, 219);
-  width: 60%;
+.sectionTitle {
+  font-size: 1.4rem;
+}
+
+.experienceTitle {
+  font-size: 1rem;
+  grid-area: title;
+}
+
+.container {
+  position: relative;
+  height: 450px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.list {
+  height: 150px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.list__item {
+  display: grid;
+  grid-template-areas: "title title" "icon link";
+}
+
+.link {
+  grid-area: link;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-50%);
+}
+
+.lineCont {
+  grid-area: lineSection;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  margin: 0;
+  border: 2px dotted rgb(88, 196, 219);
+  grid-column: 3/4;
+  width: 100%;
 }
 
 .lineSecond {
   position: absolute;
-  top: 340%;
-  left: -15%;
+  top: 400%;
+  left: 0%;
   transform: rotate(-90deg);
-  border-bottom: 5px dotted rgb(88, 196, 219);
-  width: 30%;
+  border-bottom: 2px solid rgb(88, 196, 219);
+  width: 300px;
+}
+
+.lineThird {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  transform: translateX(-150px) translateY(150px) rotate(-90deg);
+  box-sizing: border-box;
+  border: 0.2px solid rgb(100, 98, 98);
+  width: 300px;
+}
+.lineThird__dots {
+  width: 100%;
+  position: relative;
+  border: none;
+}
+.lineThird .dot {
+  width: 9px;
+  height: 9px;
+  background-color: rgb(88, 196, 219);
+  /* Change the color of the circles as needed */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  /* Vertically center the circle on the line */
+  transform: translateX(-50%) translateY(-50%);
+}
+.lineThird .dot:nth-child(1) {
+  left: 0%;
+}
+.lineThird .dot:nth-child(2) {
+  left: 50%;
+}
+.lineThird .dot:nth-child(3) {
+  left: 100%;
 }
 
 /*# sourceMappingURL=styles.module.css.map */

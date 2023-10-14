@@ -21,10 +21,14 @@ a {
     cursor: pointer;
   }
 
-  
+  .center {
+    @include flexAbsoluteCenter;
+  }
+
+ 
 .container {
    
-    background: rgba(0, 0, 0, 0.2);
+ 
     color: whitesmoke;
     max-width: 100%;
     display: grid;

@@ -6,8 +6,7 @@ import classes from './styles.module.css'
 export const Section = (props) => {
   const {
     classNameVariant,
-    content,
-    sectionTitle
+    content
   } = props
 
   const variantClass = classes[classNameVariant]
@@ -16,7 +15,6 @@ export const Section = (props) => {
     <section
       className={`${variantClass ? ` ${variantClass}` : ''}`}
     >
-      {sectionTitle && <h4>{sectionTitle}</h4>}
       {content}
     </section>
   )
