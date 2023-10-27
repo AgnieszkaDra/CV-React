@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import classes from './styles.module.css'
-
 export const Skills = (props) => {
   const {
     frontendtechnologies,
@@ -11,34 +9,32 @@ export const Skills = (props) => {
 
   const renderListFront = (item, i) => {
     return (
-      <li key={`front_item_${i}`}>
+      <li key={i}>
         {item}{item.level}
       </li>
     )
   }
   const renderListLanguages = (item, i) => {
     return (
-      <li key={`front_item_${i}`}>
+      <li key={i}>
         {item.name}{item.level}
       </li>
     )
   }
 
   return (
-
-    <div className={`${classes.root}`} >
-      <ul key={'front_list'}>
+    <>
+      <ul>
         {frontendtechnologies.map((item, i) => {
           return renderListFront(item, i)
         })}
       </ul>
-      <ul key={'front_list'}>
+      <ul>
         {languages.list.map((item, i) => {
           return renderListLanguages(item, i)
         })}
       </ul>
-    </div>
-
+    </>
   )
 }
 

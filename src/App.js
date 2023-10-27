@@ -3,7 +3,6 @@ import './App.css'
 
 import Header from './components/Header'
 import Main from './components/Main/Main'
-
 import data from './data'
 import PropTypes from 'prop-types'
 
@@ -13,12 +12,10 @@ export default class CV extends React.Component {
       <div className={'container'}>
         <Header
           {...data.infoProfile}
-          className={'header'}
         >
         </Header>
         <Main
           {...data}
-          className={'main'}
         >
         </Main>
       </div>

@@ -2,43 +2,27 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // import MainProfile from '../MainProfile/MainProfile'
-import Section from '../Section/Section'
+
 import Avatar from './Avatar'
 import ContactsList from '../ContactsList/ContactsList'
 import Description from '../Description/Description'
 import classes from './styles.module.css'
 
 export const Header = (props) => {
-  const {
-    classNameVariant
-  } = props
-
   return (
-    <header className={`${classes.header}${classNameVariant ? ` ${classNameVariant}` : ''}`}>
-      <Section
-        classNameVariant={'avatarContainer'}
-        content={<Avatar className={'mainProfilePhoto'}></Avatar>}
-      >
-      </Section>
-      <Section
-        classNameVariant={'infoContainer'}
-        content={
-          <>
-            <Description
-              {...props.profileDescription}
-              className = {'basicData'}
-            >
-            </Description>
-            <ContactsList
-              {...props.profileBasic}
-              {...props.profileList}
-              className={'contacts'}
-            >
-            </ContactsList>
-
-          </>}
-      >
-      </Section>
+    <header className={classes.header}>
+      <Avatar className={classes.header__photo}></Avatar>
+      <div className={classes.header__info}>
+        <Description
+          {...props.profileDescription}
+        >
+        </Description>
+        <ContactsList
+          {...props.profileBasic}
+          {...props.profileList}
+        >
+        </ContactsList>
+      </div>
     </header>
   )
 }

@@ -5,18 +5,14 @@ import classes from './styles.module.css'
 
 export const Description = (props) => {
   const {
-    className,
     name,
     position
-
   } = props
-
-  const variantClass = classes[className]
   return (
-    <div className={`${variantClass ? ` ${variantClass}` : ''}`}>
-      <h3 className={classes.name}>{name}</h3>
-      <h4 className={classes.position}>{position}</h4>
-      <hr className={classes.line}></hr>
+    <div className={classes.data}>
+      <h3 className={classes.data__name}>{name}</h3>
+      <h4 className={classes.data__position}>{position}</h4>
+      <hr className={classes.data__hr}></hr>
     </div>
   )
 }

@@ -8,11 +8,13 @@ export const Avatar = (props) => {
     className
   } = props
   return (
-    <img
-      className={`${className ? ` ${classes.mainProfilePhoto}` : ''}`}
-      src={logo}
-      alt={'Logo'}
-    />
+    <div className={className}>
+      <img
+        className={classes.img}
+        src={logo}
+        alt={'Logo'}
+      />
+    </div>
   )
 }
 

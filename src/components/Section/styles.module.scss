@@ -1,21 +1,47 @@
 @import '../../styles/abstracts/';
 
-
-
-.avatarContainer {
-width: 30%;
-
+.section {
+  padding: 0 20px 0 20px;
+  margin: 20px 0;
+  position: relative;
 }
+
+
 
 .infoContainer {
-   width: 70%;
-   padding: 10px 0px;
-   display: flex;
- 
-}
-
-.experience {
-  padding: 40px;
-  position: relative;
+  width: 70%;
+  padding: 10px 0px;
+  display: flex;
 
 }
+
+.headline {
+  display: grid;
+  grid-template-columns: 7% 23% 70%;
+  grid-template-areas:
+    'iconSection titleSection lineSection';
+  padding: 30px 0 30px 0;
+}
+
+.title {
+  color: $color-font-main;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lineContainer {
+  grid-area: lineSection;
+  @include flexAbsoluteCenter;
+}
+
+.line {
+  margin: 0;
+  border: 2px dotted $color-contrast;
+  grid-column: 3/4;
+  width: 100%;
+}
+

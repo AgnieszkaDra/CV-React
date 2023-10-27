@@ -7,27 +7,32 @@ import PropTypes from 'prop-types'
 
 export const ContactsList = (props) => {
   const {
-    className,
     list
   } = props
 
-  const variantClass = classes[className]
   const renderListItem = (item, i) => {
     return (
-      <li key={i}
-        className={classes.list__element}>
+      <li
+        key={i}
+        className={classes.list__element}
+      >
         <>
-          <Link values={item.data}
-            className={classes.list__link}></Link>
-          <Icon icon={item.icon}
-           ></Icon>
+          <Link
+            className={classes.list__link}
+            values={item.data}
+          >
+          </Link>
+          <Icon
+            icon={item.icon}
+          >
+          </Icon>
         </>
       </li>
     )
   }
 
   return (
-    <div className={`${variantClass ? ` ${variantClass}` : ''}`}>
+    <div className={classes.contacts}>
       <ul className={classes.list} >
         {list.map((item, i) => {
           return renderListItem(item, i)

@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Icon from '../Icon'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faClock } from '@fortawesome/free-solid-svg-icons'
+import Link from '../Link'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from '@fortawesome/free-solid-svg-icons'
 import classes from './styles.module.css'
 
 export const Experience = (props) => {
@@ -24,7 +24,7 @@ export const Experience = (props) => {
           <div className={classes.date}>
             <Icon
               icon={faClock}
-              className={classes.date__icon}
+              className={`${classes.date__icon} icon`}
             >
             </Icon>
             <h4 className={classes.date__date}>{item.date}</h4>
@@ -43,7 +43,12 @@ export const Experience = (props) => {
           className={`${classes.list__item}${classes.description}`}
           key={i}
         >
-
+          <h4 className={classes.title}>{item.description}</h4>
+          <Link
+            values={item.companyLink}
+            className={classes}
+          >
+          </Link>
         </li>
       </ul>
     )
@@ -69,17 +74,17 @@ export const Experience = (props) => {
   }
   return (
     <>
-      <div className={classes.headline}>
+      {/* <div className={classes.headline}>
         <div
-          className={`${classes.icon} ${classes.briefCase}`}
+          className={`${classes.icon} ${classes.briefCase} icon`}
         >
-          <FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faBriefcase} ></FontAwesomeIcon>
         </div>
         <h4 className={`${classes.sectionTitle} ${classes.title}`}>EXPERIENCE AND EDUCATION</h4>
         <div className={classes.lineCont}>
           <hr className={classes.line}></hr>
         </div>
-      </div>
+      </div> */}
       <hr className={classes.lineSecond}></hr>
       <div className={classes.container}>
         <div className={classes.lineThird}>

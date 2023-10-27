@@ -1,5 +1,7 @@
-.avatarContainer {
-  width: 30%;
+.section {
+  padding: 0 20px 0 20px;
+  margin: 20px 0;
+  position: relative;
 }
 
 .infoContainer {
@@ -8,9 +10,35 @@
   display: flex;
 }
 
-.experience {
-  padding: 40px;
-  position: relative;
+.headline {
+  display: grid;
+  grid-template-columns: 7% 23% 70%;
+  grid-template-areas: "iconSection titleSection lineSection";
+  padding: 30px 0 30px 0;
+}
+
+.title {
+  color: rgb(100, 98, 98);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lineContainer {
+  grid-area: lineSection;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  margin: 0;
+  border: 2px dotted rgb(88, 196, 219);
+  grid-column: 3/4;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.module.css.map */

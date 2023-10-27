@@ -8,28 +8,24 @@ import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'
 
 import classes from './styles.module.css'
+import { faBriefcase, faCode } from '@fortawesome/free-solid-svg-icons'
 
-export const Main = (props) => {
-  const {
-    className
-  } = props
-
+export const Main = () => {
   return (
-    <main className={`${classes.main}${className ? ` ${className}` : ''}`}>
+    <main className={classes.main}>
       <Section
         {...data}
         content={<Experience {...data.experience}></Experience>}
-        classNameVariant= {'experience'}
+        title={'Education and Experience'}
+        icon={faBriefcase}
       >
       </Section>
       <Section
         {...data}
-        sectionTitle={'Skills'}
+        content={<Skills {...data.skills}></Skills>}
+        title={'Skills'}
+        icon={faCode}
       >
-        <Skills
-          {...data.skills}
-        >
-        </Skills>
       </Section>
       <Section
         {...data}
