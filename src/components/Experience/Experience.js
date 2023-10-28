@@ -17,7 +17,7 @@ export const Experience = (props) => {
     return (
       <ul className={classes.list}>
         <li
-          className={`${classes.list__item}${classes.information}`}
+          className={`${classes.list__item}`}
           key={i}
         >
           <h3 className={`${classes.title} ${classes.experienceTitle}`}>{item.title}</h3>

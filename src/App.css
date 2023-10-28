@@ -18,6 +18,10 @@ a:hover {
   cursor: pointer;
 }
 
+ul {
+  padding: 0;
+}
+
 .center {
   display: flex;
   justify-content: center;

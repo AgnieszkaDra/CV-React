@@ -6,11 +6,80 @@
   align-items: center;
 }
 
+.skills {
+  display: flex;
+}
+.skills > * {
+  flex: 50%;
+}
+
 .name {
   font-size: 32px;
   font-weight: 900;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+}
+
+.container {
+  position: relative;
+  height: 400px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.lineThird {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translateX(-200px) translateY(200px) rotate(-90deg);
+  box-sizing: border-box;
+  border: 0.2px solid rgb(100, 98, 98);
+  width: 400px;
+}
+.lineThird__dots {
+  width: 100%;
+  position: relative;
+  border: none;
+}
+.lineThird .dot {
+  width: 9px;
+  height: 9px;
+  background-color: rgb(88, 196, 219);
+  /* Change the color of the circles as needed */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  /* Vertically center the circle on the line */
+  transform: translateX(-50%) translateY(-50%);
+}
+.lineThird .dot:nth-child(2) {
+  left: 11.1111111111%;
+}
+.lineThird .dot:nth-child(3) {
+  left: 22.2222222222%;
+}
+.lineThird .dot:nth-child(4) {
+  left: 33.3333333333%;
+}
+.lineThird .dot:nth-child(5) {
+  left: 44.4444444444%;
+}
+.lineThird .dot:nth-child(6) {
+  left: 55.5555555556%;
+}
+.lineThird .dot:nth-child(7) {
+  left: 66.6666666667%;
+}
+.lineThird .dot:nth-child(8) {
+  left: 77.7777777778%;
+}
+.lineThird .dot:nth-child(9) {
+  left: 88.8888888889%;
+}
+.lineThird .dot:nth-child(10) {
+  left: 100%;
 }
 
 /*# sourceMappingURL=styles.module.css.map */

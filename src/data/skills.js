@@ -1,20 +1,24 @@
 const skills = {
 
   languages: {
-    sectionTitle: 'Languages',
+    title: 'Languages',
     list: [{ name: 'Polish', level: 'Native' }, { name: 'English', level: 'B1/B2' }]
   },
-  frontendtechnologies: [
-    'HTML',
-    'CSS5',
-    'SCSS',
-    'Javascript',
-    'ReactJS',
-    'WEBPACK',
-    'API',
-    'GIT'
-  ]
-
+  frontendtechnologies: {
+    title: 'Technologies',
+    list: [
+      'HTML',
+      'CSS5',
+      'SCSS',
+      'Javascript',
+      'ReactJS',
+      'WEBPACK',
+      'API',
+      'GIT',
+      'Redux',
+      'hjjj'
+    ]
+  }
 }
 
 export default skills
