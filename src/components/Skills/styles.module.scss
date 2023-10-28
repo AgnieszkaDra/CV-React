@@ -12,10 +12,61 @@
 
   .skills {
     display: flex;
-    > * {
+    position: relative;
+    height: 400px;
+
+    &__container {
+
+        display: flex;
+       
+        width: 100%;
+        > * {
         flex: 50%;
     }
+  
+    }
+
   }
+  .list {
+           list-style: none; 
+        
+           height: 400px;
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           grid-gap: 20px;
+           grid-template-rows: repeat(3, 60px);
+        
+          
+           &__item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-left: 3px solid black;
+           font-size: 16px;
+            padding: 8px;
+            position: relative;
+            // height: calc(35px - 14px);
+
+           }
+        //    &__item:nth-child(1){
+        //     margin-top: 25px;
+        //    }
+        //    &__item:nth-child(10){
+        //     margin-bottom: 25px;
+        //    }
+           
+    }
+
+    .frontTitle::before {
+        content: ".";
+        font-size: 50px;
+        margin-right: 5px;
+        padding: 5px;
+        padding-bottom: -15px; /* Add some spacing after the dot if desired */
+        color: red; 
+    }
+    
+
   
   .name {
   
@@ -39,18 +90,15 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    // transform: translateX(-250px) translateY(150px) rotate(-90deg);
-    transform: translateX(-200px) translateY(200px) rotate(-90deg);
+    transform: translateX(-50%) translateY(30px) rotate(-90deg);
     box-sizing: border-box;
-    border: 0.2px solid $color-font-main;
-    width: 400px;
+    border: 0.2px solid rgb(100, 98, 98);
+
 
     &__dots {
         width: 100%;
         position: relative;
         border: none;
-
-
     }
 
     .dot {
@@ -64,14 +112,15 @@
         /* Vertically center the circle on the line */
         transform: translateX(-50%) translateY(-50%);
 
-        $element-count: 9; 
-        $sum: 0%;
+    //     $element-count: 9; 
+    //     $sum: 0%;
 
-        @for $i from 1 through $element-count {
-            $sum: $sum + calc(100% / $element-count);
-            &:nth-child(#{$i + 1}) {
-              left: $sum;
-            }
-          }
-    }
+    //     @for $i from 1 through $element-count {
+    //         $sum: $sum + calc(100% / $element-count);
+    //         &:nth-child(#{$i + 1}) {
+    //           left: $sum;
+    //         }
+    //       }
+    // }
+}
 }

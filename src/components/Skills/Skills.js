@@ -9,7 +9,7 @@ export const Skills = (props) => {
     languages
   } = props
 
-  const span = frontendtechnologies.list.length
+  const span = 1
 
   const spanElement = (spanElement) => {
     const numberOfElements = spanElement
@@ -35,7 +35,13 @@ export const Skills = (props) => {
       <>
         <li
           key={i}
+          className={classes.list__item}
         >
+          <div className={classes.lineThird}>
+            <div className={classes.lineThird__dots}>
+              {spanElement(span)}
+            </div>
+          </div>
           {item}{item.level}
         </li>
 
@@ -46,6 +52,7 @@ export const Skills = (props) => {
     return (
       <li
         key={i}
+        className={classes.list__item}
       >
         {item.name}{item.level}
       </li>
@@ -53,27 +60,29 @@ export const Skills = (props) => {
   }
 
   return (
-    <div className={classes.skills}>
-      <ul>
-        <div className={classes.container}>
-          <div className={classes.lineThird}>
-            <div className={classes.lineThird__dots}>
-              {spanElement(span)}
-            </div>
+    <>
+      <h3 className={classes.frontTitle}>{frontendtechnologies.title}</h3>
+      <h3>{languages.title}</h3>
+      <div className={classes.skills}>
+        <div className={classes.lineThird}>
+          <div className={classes.lineThird__dots}>
+            {spanElement(span)}
           </div>
         </div>
-        <h3>{frontendtechnologies.title}</h3>
-        {frontendtechnologies.list.map((item, i) => {
-          return renderListFront(item, i)
-        })}
-      </ul>
-      <ul>
-        <h3>{languages.title}</h3>
-        {languages.list.map((item, i) => {
-          return renderListLanguages(item, i)
-        })}
-      </ul>
-    </div>
+        <div className={classes.skills__container}>
+          <ul className={classes.list}>
+            {frontendtechnologies.list.map((item, i) => {
+              return renderListFront(item, i)
+            })}
+          </ul>
+          <ul className={classes.list}>
+            {languages.list.map((item, i) => {
+              return renderListLanguages(item, i)
+            })}
+          </ul>
+        </div>
+      </div>
+    </>
   )
 }
 

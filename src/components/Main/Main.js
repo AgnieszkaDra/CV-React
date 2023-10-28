@@ -5,7 +5,7 @@ import data from '../../data'
 import Section from '../Section/Section'
 import Experience from '../Experience/Experience'
 import Skills from '../Skills/Skills'
-import Projects from '../Projects/Projects'
+// import Projects from '../Projects/Projects'
 
 import classes from './styles.module.css'
 import { faBriefcase, faCode } from '@fortawesome/free-solid-svg-icons'
@@ -27,12 +27,12 @@ export const Main = () => {
         icon={faCode}
       >
       </Section>
-      <Section
+      {/* <Section
         {...data}
         sectionTitle={'Projects'}
       >
         <Projects {...data.projects}></Projects>
-      </Section>
+      </Section> */}
     </main>
   )
 }
