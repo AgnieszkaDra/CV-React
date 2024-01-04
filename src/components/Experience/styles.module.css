@@ -1,52 +1,23 @@
-.headline {
-  display: grid;
-  grid-template-columns: 7% 23% 70%;
-  grid-template-areas: "iconSection titleSection lineSection";
-  padding: 30px 0 30px 0;
-}
-
-.icon.globe {
-  grid-area: icon;
-}
-
-.title {
-  color: rgb(100, 98, 98);
-  margin: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.sectionTitle {
-  font-size: 1.4rem;
-}
-
-.experienceTitle {
-  font-size: 1rem;
-  grid-area: title;
-}
-
 .container {
-  position: relative;
   height: 400px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 40px 0 40px;
 }
 
 .list {
   margin: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  list-style: disc;
   display: grid;
-  list-style: none;
   grid-template-columns: 50% 50%;
 }
 .list__item {
   padding: 20px;
-  height: 93.33px;
-  border: 3px solid pink;
+}
+
+::marker {
+  font-size: 30px;
+  color: rgb(88, 196, 219);
 }
 
 .date {
@@ -61,13 +32,6 @@
 
 .link {
   grid-area: link;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.lineCont {
-  grid-area: lineSection;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -9,27 +9,26 @@ export const Skills = (props) => {
     languages
   } = props
 
-  const span = 1
+  // const span = 1
 
-  const spanElement = (spanElement) => {
-    const numberOfElements = spanElement
-    const elements = []
+  // const spanElement = (spanElement) => {
+  //   const numberOfElements = spanElement
+  //   const elements = []
 
-    for (let i = 1; i <= numberOfElements; i++) {
-      elements.push(
-        <span
-          key={i}
-          className={classes.dot}
-        >
-        </span>)
-    }
-    return (
-      <>
-        {elements}
-      </>
-    )
-  }
-
+  //   for (let i = 1; i <= numberOfElements; i++) {
+  //     elements.push(
+  //       <span
+  //         key={i}
+  //         className={classes.dot}
+  //       >
+  //       </span>)
+  //   }
+  //   return (
+  //     <>
+  //       {elements}
+  //     </>
+  //   )
+  // }
   const renderListFront = (item, i) => {
     return (
       <>
@@ -37,14 +36,13 @@ export const Skills = (props) => {
           key={i}
           className={classes.list__item}
         >
-          <div className={classes.lineThird}>
+          {/* <div className={classes.lineThird}>
             <div className={classes.lineThird__dots}>
               {spanElement(span)}
             </div>
-          </div>
+          </div> */}
           {item}{item.level}
         </li>
-
       </>
     )
   }
@@ -60,29 +58,24 @@ export const Skills = (props) => {
   }
 
   return (
-    <>
-      <h3 className={classes.frontTitle}>{frontendtechnologies.title}</h3>
-      <h3>{languages.title}</h3>
-      <div className={classes.skills}>
-        <div className={classes.lineThird}>
-          <div className={classes.lineThird__dots}>
-            {spanElement(span)}
-          </div>
-        </div>
-        <div className={classes.skills__container}>
-          <ul className={classes.list}>
-            {frontendtechnologies.list.map((item, i) => {
-              return renderListFront(item, i)
-            })}
-          </ul>
-          <ul className={classes.list}>
-            {languages.list.map((item, i) => {
-              return renderListLanguages(item, i)
-            })}
-          </ul>
-        </div>
+    <div className={classes.container}>
+      <div>
+        <h3 className={classes.headline}>{frontendtechnologies.title}</h3>
+        <ul className={classes.list}>
+          {frontendtechnologies.list.map((item, i) => {
+            return renderListFront(item, i)
+          })}
+        </ul>
       </div>
-    </>
+      <div>
+        <h3 className={classes.headline}>{languages.title}</h3>
+        <ul className={classes.list}>
+          {languages.list.map((item, i) => {
+            return renderListLanguages(item, i)
+          })}
+        </ul>
+      </div>
+    </div>
   )
 }
 

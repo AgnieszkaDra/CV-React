@@ -6,43 +6,54 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
   color: $color-font-main;
-  }
+}
   
-  a:hover {
-    color: gray;
-    text-decoration: none;
-    cursor: pointer;
-  }
+a:hover {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-  ul {
-    padding: 0;
-    margin: 0
-  }
+ul {
+  padding: 0;
+  margin: 0
+}
 
-  .center {
-    @include flexAbsoluteCenter;
-  }
+.center {
+  @include flexAbsoluteCenter;
+}
 
  
 .container {
    
-    color: whitesmoke;
-    max-width: 100%;
-    display: grid;
-    min-height: 500px;
-    margin: 0 auto;
+    // color: whitesmoke;
+    // max-width: 100%;
+    // display: grid;
+    // min-height: 500px;
+    // margin: 0 auto;
   
 
-    @include respond(tablet) {
-        max-width: 90%;
-    }
+    // @include respond(tablet) {
+    //     max-width: 90%;
+    // }]
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-background;
   }
 
   .icon {
@@ -51,11 +62,11 @@ a {
     height: 40px;
     color: $color-font-main;
     @include flexAbsoluteCenter;
-}
+  }
 
-.border-round {
-  border-radius: 50%;
-  border: 2px solid $color-contrast;
-  margin-right: 10px;
-  @include flexAbsoluteCenter;
-}
+  .border-round {
+    border-radius: 50%;
+    border: 2px solid $color-contrast;
+    margin-right: 10px;
+    @include flexAbsoluteCenter;
+  }

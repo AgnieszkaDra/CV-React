@@ -1,126 +1,35 @@
 @import '../../styles/abstracts/';
 
-
-
-.root {
-    padding: 40px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .skills {
-    display: flex;
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     position: relative;
     height: 400px;
+}
 
-    &__container {
+.headline {
+    text-transform: uppercase;
+    padding: 10px;
+}
 
+.list {
+    list-style: none; 
+    display: grid;
+    grid-template-columns: repeat(2, 50%);     
+      &__item {
         display: flex;
-       
-        width: 100%;
-        > * {
-        flex: 50%;
+        justify-content: flex-start;
+        align-items: center;
+        border-left: 3px solid black;
+        font-size: 16px;
+        padding: 8px;
+        margin-bottom: 10px;
     }
-  
-    }
+}
 
-  }
-  .list {
-           list-style: none; 
-        
-           height: 400px;
-           display: grid;
-           grid-template-columns: repeat(3, 1fr);
-           grid-gap: 20px;
-           grid-template-rows: repeat(3, 60px);
-        
-          
-           &__item {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            border-left: 3px solid black;
-           font-size: 16px;
-            padding: 8px;
-            position: relative;
-            // height: calc(35px - 14px);
 
-           }
-        //    &__item:nth-child(1){
-        //     margin-top: 25px;
-        //    }
-        //    &__item:nth-child(10){
-        //     margin-bottom: 25px;
-        //    }
-           
-    }
-
-    .frontTitle::before {
-        content: ".";
-        font-size: 50px;
-        margin-right: 5px;
-        padding: 5px;
-        padding-bottom: -15px; /* Add some spacing after the dot if desired */
-        color: red; 
-    }
     
 
-  
-  .name {
-  
-      font-size: 32px;
-      font-weight: 900;
-      margin-top: 0;
-      margin-bottom: 13px;
-  
-  }
-
-  .container {
-    position: relative;
-    height: 400px;
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.lineThird {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    transform: translateX(-50%) translateY(30px) rotate(-90deg);
-    box-sizing: border-box;
-    border: 0.2px solid rgb(100, 98, 98);
 
 
-    &__dots {
-        width: 100%;
-        position: relative;
-        border: none;
-    }
 
-    .dot {
-        width: 9px;
-        height: 9px;
-        background-color: $color-contrast;
-        /* Change the color of the circles as needed */
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        /* Vertically center the circle on the line */
-        transform: translateX(-50%) translateY(-50%);
-
-    //     $element-count: 9; 
-    //     $sum: 0%;
-
-    //     @for $i from 1 through $element-count {
-    //         $sum: $sum + calc(100% / $element-count);
-    //         &:nth-child(#{$i + 1}) {
-    //           left: $sum;
-    //         }
-    //       }
-    // }
-}
-}

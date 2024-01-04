@@ -1,31 +1,19 @@
-.root {
-  padding: 40px;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.skills {
-  display: flex;
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   position: relative;
   height: 400px;
 }
-.skills__container {
-  display: flex;
-  width: 100%;
-}
-.skills__container > * {
-  flex: 50%;
+
+.headline {
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .list {
   list-style: none;
-  height: 400px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  grid-template-rows: repeat(3, 60px);
+  grid-template-columns: repeat(2, 50%);
 }
 .list__item {
   display: flex;
@@ -34,57 +22,7 @@
   border-left: 3px solid black;
   font-size: 16px;
   padding: 8px;
-  position: relative;
-}
-
-.frontTitle::before {
-  content: ".";
-  font-size: 50px;
-  margin-right: 5px;
-  padding: 5px;
-  padding-bottom: -15px; /* Add some spacing after the dot if desired */
-  color: red;
-}
-
-.name {
-  font-size: 32px;
-  font-weight: 900;
-  margin-top: 0;
-  margin-bottom: 13px;
-}
-
-.container {
-  position: relative;
-  height: 400px;
-  background-color: antiquewhite;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-.lineThird {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transform: translateX(-50%) translateY(30px) rotate(-90deg);
-  box-sizing: border-box;
-  border: 0.2px solid rgb(100, 98, 98);
-}
-.lineThird__dots {
-  width: 100%;
-  position: relative;
-  border: none;
-}
-.lineThird .dot {
-  width: 9px;
-  height: 9px;
-  background-color: rgb(88, 196, 219);
-  /* Change the color of the circles as needed */
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  /* Vertically center the circle on the line */
-  transform: translateX(-50%) translateY(-50%);
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=styles.module.css.map */

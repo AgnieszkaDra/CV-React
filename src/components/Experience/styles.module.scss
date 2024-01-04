@@ -1,74 +1,26 @@
 @import '../../styles/abstracts/';
 
-.headline {
-    display: grid;
-    grid-template-columns: 7% 23% 70%;
-    grid-template-areas:
-        'iconSection titleSection lineSection';
-    padding: 30px 0 30px 0;
-}
-
-
-// .icon {
-//     display: block;
-//     width: 40px;
-//     height: 40px;
-//     color: $color-font-main;
-//     @include flexAbsoluteCenter;
-// }
-
-// .icon.briefCase {
-//     border-radius: 50%;
-//     border: 2px solid $color-contrast;
-//     margin-right: 10px;
-//     @include flexAbsoluteCenter;
-// }
-
-.icon.globe {
-    grid-area: icon;
-}
-
-.title {
-    color: $color-font-main;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.sectionTitle {
-    font-size: 1.4rem;
-}
-
-.experienceTitle {
-    font-size: 1rem;
-    grid-area: title;
-}
-
 .container {
-    position: relative;
     height: 400px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 40px 0 40px;
 }
 
 .list {
- 
     margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    list-style: disc;
     display: grid;
-    list-style: none;
     grid-template-columns: 50% 50%;
   
     &__item {
         padding: 20px;
-        height: calc(133.33px - 40px);
-       border: 3px solid pink;
     }
+}
+
+::marker {
+    font-size: 30px;
+    color: $color-contrast;
 }
 
 .date {
@@ -87,10 +39,10 @@
 
 
 
-.lineCont {
-    grid-area: lineSection;
-    @include flexAbsoluteCenter;
-}
+// .lineCont {
+//     grid-area: lineSection;
+//     @include flexAbsoluteCenter;
+// }
 
 .line {
     margin: 0;
@@ -163,3 +115,4 @@
 
     }
 }
+
