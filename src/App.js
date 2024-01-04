@@ -1,5 +1,5 @@
 import React from 'react'
-// import html2pdf from 'html2pdf.js'
+import html2pdf from 'html2pdf.js'
 import './App.css'
 
 import Header from './components/Header'
@@ -8,20 +8,20 @@ import data from './data'
 import PropTypes from 'prop-types'
 
 export default class CV extends React.Component {
-  // handleDownload = () => {
-  //   const element = document.getElementById('content')
+  handleDownload = () => {
+    const element = document.getElementById('content')
 
-  //   // Configuration options for html2pdf
-  //   const options = {
-  //     margin: 10,
-  //     filename: 'document.pdf',
-  //     image: { type: 'jpeg', quality: 0.98 },
-  //     html2canvas: { scale: 2 },
-  //     jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  //   }
+    // Configuration options for html2pdf
+    const options = {
+      margin: 10,
+      filename: 'document.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    }
 
-  //   html2pdf().from(element).set(options).save()
-  // }
+    html2pdf().from(element).set(options).save()
+  }
 
   render () {
     return (
@@ -38,7 +38,7 @@ export default class CV extends React.Component {
             </Main>
           </div>
         </div>
-        {/* <button onClick={this.handleDownload}>Download as PDF</button> */}
+        <button onClick={this.handleDownload}>Download as PDF</button>
       </>
     )
   };
