@@ -22,20 +22,18 @@
         padding: 0 20px 20px 20px;
     }
 
+    &__hr {
+        display: block;
+        height: 2px;   
+        background-color: $color-contrast;
+    }
+
     &__hr_up {
         position: absolute;
         bottom: 20px;
         width: calc(100% - 60% - 40px);
         height: 2px;
-        background-color: $color-contrast;
-        display: block;
         left: calc(30% - 40px);
-    }
-
-    &__hr {
-        display: block;
-        height: 2px;   
-        background-color: $color-contrast;
     }
 
     &__hr_center{

@@ -1,11 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-/* eslint-disable */
-import { faBriefcase, faClock, faCode} from '@fortawesome/free-solid-svg-icons' 
-/* eslint-disable */
-import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
+import PropTypes from 'prop-types'
 
 export const Section = (props) => {
   const {
@@ -19,8 +16,7 @@ export const Section = (props) => {
     >
       <div className={classes.headline}>
         <div
-          className={`${classes.icon} ${`border-round`}`}
-       
+          className={`${classes.icon} ${'border-round'}`}
         >
           <FontAwesomeIcon
             icon={icon}
@@ -41,7 +37,7 @@ Section.propTypes = {
   classNameVariant: PropTypes.string,
   content: PropTypes.string,
   sectionTitle: PropTypes.string,
-  icon: PropTypes.oneOf(['red', 'green', 'blue', 'yellow']),
+  icon: PropTypes.object,
   title: PropTypes.string
 }
 

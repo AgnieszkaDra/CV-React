@@ -16,19 +16,17 @@
   font-size: 1rem;
   padding: 0 20px 20px 20px;
 }
+.data__hr {
+  display: block;
+  height: 2px;
+  background-color: rgb(88, 196, 219);
+}
 .data__hr_up {
   position: absolute;
   bottom: 20px;
   width: calc(40% - 40px);
   height: 2px;
-  background-color: rgb(88, 196, 219);
-  display: block;
   left: calc(30% - 40px);
-}
-.data__hr {
-  display: block;
-  height: 2px;
-  background-color: rgb(88, 196, 219);
 }
 .data__hr_center {
   position: absolute;

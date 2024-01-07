@@ -26,7 +26,6 @@ export const Header = (props) => {
 }
 
 Header.propTypes = {
-  classNameVariant: PropTypes.string,
   profileBasic: PropTypes.object,
   profileList: PropTypes.object,
   profileDescription: PropTypes.object

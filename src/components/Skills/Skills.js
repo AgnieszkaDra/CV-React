@@ -1,7 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import classes from './styles.module.css'
+import PropTypes from 'prop-types'
 
 export const Skills = (props) => {
   const {
@@ -9,26 +9,6 @@ export const Skills = (props) => {
     languages
   } = props
 
-  // const span = 1
-
-  // const spanElement = (spanElement) => {
-  //   const numberOfElements = spanElement
-  //   const elements = []
-
-  //   for (let i = 1; i <= numberOfElements; i++) {
-  //     elements.push(
-  //       <span
-  //         key={i}
-  //         className={classes.dot}
-  //       >
-  //       </span>)
-  //   }
-  //   return (
-  //     <>
-  //       {elements}
-  //     </>
-  //   )
-  // }
   const renderListFront = (item, i) => {
     return (
       <>
@@ -59,16 +39,16 @@ export const Skills = (props) => {
 
   return (
     <div className={classes.container}>
-      <div>
-        <h3 className={classes.headline}>{frontendtechnologies.title}</h3>
+      <div className={classes.item}>
+        <h3 className={classes.item__title}>{frontendtechnologies.title}</h3>
         <ul className={classes.list}>
           {frontendtechnologies.list.map((item, i) => {
             return renderListFront(item, i)
           })}
         </ul>
       </div>
-      <div>
-        <h3 className={classes.headline}>{languages.title}</h3>
+      <div className={classes.item}>
+        <h3 className={classes.item__title}>{languages.title}</h3>
         <ul className={classes.list}>
           {languages.list.map((item, i) => {
             return renderListLanguages(item, i)

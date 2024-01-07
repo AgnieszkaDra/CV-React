@@ -1,5 +1,4 @@
 .container {
-  height: 400px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   margin: 0 40px 0 40px;
@@ -14,6 +13,9 @@
 .list__item {
   padding: 20px;
 }
+.list__item__title {
+  margin: 10px 0;
+}
 
 ::marker {
   font-size: 30px;
@@ -23,7 +25,7 @@
 .date {
   display: flex;
 }
-.date__date {
+.date__time {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -34,62 +36,6 @@
   height: 30px;
   padding: 20px;
   display: block;
-  color: rgb(100, 98, 98);
-}
-
-.link {
-  grid-area: link;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.line {
-  margin: 0;
-  border: 2px dotted rgb(88, 196, 219);
-  grid-column: 3/4;
-  width: 100%;
-}
-
-.lineSecond {
-  position: absolute;
-  top: 400%;
-  left: 0%;
-  transform: rotate(-90deg);
-  border-bottom: 2px solid rgb(88, 196, 219);
-  width: 300px;
-}
-
-.lineThird {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transform: translateX(-150px) translateY(200px) rotate(-90deg);
-  box-sizing: border-box;
-  border: 0.2px solid rgb(100, 98, 98);
-  width: 300px;
-}
-.lineThird__dots {
-  width: 100%;
-  position: relative;
-  border: none;
-}
-.lineThird .dot {
-  width: 9px;
-  height: 9px;
-  background-color: rgb(88, 196, 219);
-  /* Change the color of the circles as needed */
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  /* Vertically center the circle on the line */
-  transform: translateX(-50%) translateY(-50%);
-}
-.lineThird .dot:nth-child(2) {
-  left: 50%;
-}
-.lineThird .dot:nth-child(3) {
-  left: 100%;
 }
 
 /*# sourceMappingURL=styles.module.css.map */

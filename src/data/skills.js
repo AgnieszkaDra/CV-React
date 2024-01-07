@@ -14,9 +14,7 @@ const skills = {
       'ReactJS',
       'WEBPACK',
       'API',
-      'GIT',
-      'Redux',
-      'hjjj'
+      'GIT'
     ]
   }
 }

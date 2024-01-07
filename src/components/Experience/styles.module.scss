@@ -1,7 +1,6 @@
 @import '../../styles/abstracts/';
 
 .container {
-    height: 400px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     margin: 0 40px 0 40px;
@@ -15,6 +14,9 @@
   
     &__item {
         padding: 20px;
+        &__title {
+            margin: 10px 0;
+        }
     }
 }
 
@@ -26,7 +28,7 @@
 .date {
     display: flex;
    
-    &__date {
+    &__time {
         margin: 0;
         @include flexAbsoluteCenter;
     }
@@ -36,91 +38,14 @@
     height: 30px;
     padding: 20px;
     display: block;
-    color: rgb(100, 98, 98);
+   
     }
 }
 
-.link {
-    grid-area: link;
-    @include flexAbsoluteCenter;
-}
 
 
 
-// .lineCont {
-//     grid-area: lineSection;
-//     @include flexAbsoluteCenter;
-// }
 
-.line {
-    margin: 0;
-    border: 2px dotted $color-contrast;
-    grid-column: 3/4;
-    width: 100%;
-}
 
-.lineSecond {
-    position: absolute;
-    top: 400%;
-    left: 0%;
-    transform: rotate(-90deg);
-    border-bottom: 2px solid $color-contrast;
-    width: 300px;
-}
 
-.lineThird {
-    position: absolute;
-    // top: 75px;
-    // left: 20px;
-    top: 0px;
-    left: 0px;
-    // transform: translateX(-150px) translateY(150px) rotate(-90deg);
-    transform: translateX(-150px) translateY(200px) rotate(-90deg);
-    box-sizing: border-box;
-    border: 0.2px solid $color-font-main;
-    
-    width: 300px;
-    // width: 270px;
-
-    &__dots {
-        width: 100%;
-        position: relative;
-        border: none;
-    }
-
-    .dot {
-        width: 9px;
-        height: 9px;
-        background-color: $color-contrast;
-        /* Change the color of the circles as needed */
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        /* Vertically center the circle on the line */
-        transform: translateX(-50%) translateY(-50%);
-
-        $element-count: 2; 
-        $sum: 0%;
-
-        @for $i from 1 through $element-count {
-            $sum: $sum + calc(100% / $element-count);
-            &:nth-child(#{$i + 1}) {
-              left: $sum;
-            }
-          }
-
-        // &:nth-child(1) {
-        //     left: 0%;
-        // }
-
-        // &:nth-child(2) {
-        //     left: 50%;
-        // }
-
-        // &:nth-child(3) {
-        //     left: 100%;
-        // }
-
-    }
-}
 
