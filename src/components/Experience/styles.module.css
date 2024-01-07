@@ -29,6 +29,13 @@
   justify-content: center;
   align-items: center;
 }
+.date__icon {
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  display: block;
+  color: rgb(100, 98, 98);
+}
 
 .link {
   grid-area: link;

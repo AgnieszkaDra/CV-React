@@ -1,11 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-
-// import MainProfile from '../MainProfile/MainProfile'
 
 import Avatar from './Avatar'
 import ContactsList from '../ContactsList/ContactsList'
 import Description from '../Description/Description'
+import PropTypes from 'prop-types'
 import classes from './styles.module.css'
 
 export const Header = (props) => {

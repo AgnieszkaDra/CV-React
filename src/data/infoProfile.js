@@ -14,7 +14,7 @@ const infoProfile = {
       },
       {
         icon: faGlobe,
-        data: 'https://subtle-tarsier-eedb30.netlify.app/'
+        data: 'https://remarkable-pothos-5fcc29.netlify.app/'
       }
     ]
   },

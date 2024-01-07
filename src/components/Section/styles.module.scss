@@ -6,6 +6,13 @@
   position: relative;
 }
 
+.icon {
+  @include flexAbsoluteCenter();
+  width: 30px;
+    height: 30px;
+    padding: 20px;
+}
+
 
 
 .infoContainer {

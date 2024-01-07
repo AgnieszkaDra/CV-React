@@ -1,38 +1,54 @@
 @import '../../styles/abstracts/';
 
-.root {
-    background-color: $color-background;
-}
 
 .data {
+    
     display: flex;
-    justify-content: center;
     flex-direction: column;
     width: 50%;
     padding: 20px;
     position: relative;
+    text-transform: uppercase;
 
     &__name {
-        text-transform: uppercase;
         letter-spacing: 0.1em;
         font-size: 2.4rem;
         padding: 20px;
         color: $color-contrast;
-        margin: 0;
     }
 
     &__position {
         font-size: 1rem;
-        text-transform: uppercase;
         padding: 0 20px 20px 20px;
-        margin: 0;
+    }
+
+    &__hr_up {
+        position: absolute;
+        bottom: 20px;
+        width: calc(100% - 60% - 40px);
+        height: 2px;
+        background-color: $color-contrast;
+        display: block;
+        left: calc(30% - 40px);
     }
 
     &__hr {
+        display: block;
+        height: 2px;   
+        background-color: $color-contrast;
+    }
+
+    &__hr_center{
         position: absolute;
-        bottom: 20px;
-        width: calc(200% - 40px);
-        height: 1px;
-        background-color: $color-font-main;
+        bottom: 10px;
+        width: calc(100% - 70% - 40px);
+        left: calc(35% - 40px);
+    }
+
+    &__hr_down {
+        position: absolute;
+        bottom: 0px;
+        width: calc(100% - 80% - 40px);
+        left: calc(40% - 40px);
     }
 }

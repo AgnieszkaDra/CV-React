@@ -9,7 +9,11 @@ export const Icon = (props) => {
   } = props
 
   return (
-    <FontAwesomeIcon icon={icon} className={classes.icon}></FontAwesomeIcon>
+    <FontAwesomeIcon
+      icon={icon}
+      className={classes.icon}
+    >
+    </FontAwesomeIcon>
   )
 }
 

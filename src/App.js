@@ -10,8 +10,6 @@ import PropTypes from 'prop-types'
 export default class CV extends React.Component {
   handleDownload = () => {
     const element = document.getElementById('content')
-
-    // Configuration options for html2pdf
     const options = {
       margin: 10,
       filename: 'document.pdf',
@@ -26,22 +24,32 @@ export default class CV extends React.Component {
   render () {
     return (
       <>
-        <div id={'content'}>
-          <div className={'container'}>
-            <Header
-              {...data.infoProfile}
-            >
-            </Header>
-            <Main
-              {...data}
-            >
-            </Main>
-          </div>
+        <div
+          className={'container'}
+          id={'content'}
+        >
+          <Header
+            {...data.infoProfile}
+          >
+          </Header>
+          <Main
+            {...data}
+          >
+          </Main>
         </div>
-        <button onClick={this.handleDownload}>Download as PDF</button>
+        <h3
+          className={'headline-mobile'}
+        >The CV is visible only on tablet and desktop version.
+        </h3>
+        <button
+          className={'button-download'}
+          onClick={this.handleDownload}
+        >
+          Download as PDF
+        </button>
       </>
     )
-  };
+  }
 }
 
 CV.propTypes = {

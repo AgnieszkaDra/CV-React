@@ -30,6 +30,14 @@
         margin: 0;
         @include flexAbsoluteCenter;
     }
+
+    &__icon {
+        width: 30px;
+    height: 30px;
+    padding: 20px;
+    display: block;
+    color: rgb(100, 98, 98);
+    }
 }
 
 .link {

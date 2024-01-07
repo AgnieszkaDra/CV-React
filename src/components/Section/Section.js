@@ -19,7 +19,8 @@ export const Section = (props) => {
     >
       <div className={classes.headline}>
         <div
-          className={`icon border-round`}
+          className={`${classes.icon} ${`border-round`}`}
+       
         >
           <FontAwesomeIcon
             icon={icon}
