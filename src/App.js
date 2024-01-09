@@ -1,10 +1,11 @@
 import React from 'react'
 import html2pdf from 'html2pdf.js'
 import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import MainContent from './components/MainContent'
+// import DownloadButton from './components/DownloadButton'
+import DownloadPage from './components/DownloadPage'
 
-import Header from './components/Header'
-import Main from './components/Main/Main'
-import data from './data'
 import PropTypes from 'prop-types'
 
 export default class CV extends React.Component {
@@ -24,29 +25,18 @@ export default class CV extends React.Component {
   render () {
     return (
       <>
-        <div
-          className={'container'}
-          id={'content'}
-        >
-          <Header
-            {...data.infoProfile}
-          >
-          </Header>
-          <Main
-            {...data}
-          >
-          </Main>
-        </div>
-        <h3
-          className={'headline-mobile'}
-        >The CV is visible only on tablet and desktop version.
-        </h3>
-        <button
-          className={'button-download'}
-          onClick={this.handleDownload}
-        >
-          Download as PDF
-        </button>
+        <Router>
+          <Routes>
+            <Route
+              path={'/'}
+              element={<MainContent />}
+            />
+            <Route
+              path={'/download'}
+              element={<DownloadPage />}
+            />
+          </Routes>
+        </Router>
       </>
     )
   }
