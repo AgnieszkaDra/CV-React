@@ -5,7 +5,8 @@ import Section from '../Section/Section'
 import Experience from '../Experience/Experience'
 import Skills from '../Skills/Skills'
 // import Projects from '../Projects/Projects'
-import { faBriefcase, faCode } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faCode, faFile } from '@fortawesome/free-solid-svg-icons'
+import Enclosure from '../Enclosure'
 
 export const Main = () => {
   return (
@@ -22,6 +23,13 @@ export const Main = () => {
         content={<Skills {...data.skills}></Skills>}
         title={'Skills'}
         icon={faCode}
+      >
+      </Section>
+      <Section
+        {...data}
+        content={<Enclosure></Enclosure>}
+        title={'Enclosure'}
+        icon={faFile}
       >
       </Section>
       {/* <Section

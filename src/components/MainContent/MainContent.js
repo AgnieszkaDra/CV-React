@@ -1,29 +1,23 @@
 import React from 'react'
-import html2pdf from 'html2pdf.js'
+
 import Header from '../Header/Header'
 import Main from '../Main/Main'
-import DownloadButton from '../DownloadButton'
+import DownloadPage from '../DownloadPage'
+
 import data from '../../data'
 
 export default class MainContent extends React.Component {
-  handleDownload = () => {
-    const element = document.getElementById('content')
-    const options = {
-      margin: 10,
-      filename: 'document.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    }
-
-    html2pdf().from(element).set(options).save()
+  constructor (props) {
+    super(props)
+    // eslint-disable-next-line react/prop-types
+    this.className = props.className
   }
 
   render () {
     return (
       <>
         <div
-          className={'container'}
+          className={`container ${this.className ? 'none' : ''}`}
           id={'content'}
         >
           <Header
@@ -39,13 +33,7 @@ export default class MainContent extends React.Component {
           className={'headline-mobile'}
         >The CV is visible only on tablet and desktop version.
         </h3>
-        <DownloadButton></DownloadButton>
-        <button
-          className={'button-download'}
-          onClick={this.handleDownload}
-        >
-          Download as PDF
-        </button>
+        <DownloadPage></DownloadPage>
       </>
     )
   }

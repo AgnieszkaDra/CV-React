@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container label {
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.container input {
+  width: 30%;
+  margin: 10px 0;
+  background: none;
+  padding: 10px 8px;
+  border-radius: 0.3em;
+  border: 1px solid rgb(88, 196, 219);
+}
+.container input:focus, .container input:active {
+  outline: none;
+}
+.container button {
+  width: 20%;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 0.3em;
+  background-color: rgb(88, 196, 219);
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+.container button:active, .container button:focus {
+  outline: 0;
+}
+.container button:hover {
+  background-color: white;
+}
+.container select {
+  width: 10%;
+  height: 30px;
+}
+
+/*# sourceMappingURL=styles.module.css.map */

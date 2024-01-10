@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button {
+  width: 20%;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 0.3em;
+  background-color: rgb(88, 196, 219);
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+.button:active, .button:focus {
+  outline: 0;
+}
+.button:hover {
+  background-color: white;
+}
+
+/*# sourceMappingURL=styles.module.css.map */
