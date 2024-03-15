@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import classes from './styles.module.css'
+import classes from './styles.module.scss'
 import { useSelectLanguage } from '../../hooks/useSelectLanguage'
 import { useCompanyName } from '../../hooks/useCompanyName'
 
@@ -9,7 +9,7 @@ export const Enclosure = () => {
   const [confirmationClass, setConfirmationClass] = useState('')
 
   const handleConfirmationClick = () => {
-    setConfirmationClass('none')
+    setConfirmationClass(classes.none)
   }
 
   const enclosure = {
@@ -21,11 +21,15 @@ export const Enclosure = () => {
 
   return (
     <>
-      {selectedLanguage === '' && <div><p>{enclosure.polish}</p><p>{enclosure.polish2}</p></div>}
-      {selectedLanguage === 'polish' && <p>{enclosure.polish}</p>}
-      {selectedLanguage === 'english' && <p>{enclosure.english}</p>}
+      {selectedLanguage === '' && <div><p className={classes.paragraph}>{enclosure.polish}</p><p className={classes.paragraph}>{enclosure.polish2}</p></div>}
+      {selectedLanguage === 'polish' && <p className={classes.paragraph}>{enclosure.polish}</p>}
+      {selectedLanguage === 'english' && <p className={classes.paragraph}>{enclosure.english}</p>}
       <div className={`${confirmationClass} ${classes.container}`} >
-        <label htmlFor={'companyName'}>Company name</label>
+        <label
+          htmlFor={'companyName'}
+          style={{ fontSize: '10px' }}
+        >Company name
+        </label>
         <input
           type={'text'}
           id={'companyName'}
@@ -34,6 +38,7 @@ export const Enclosure = () => {
         />
         <label
           htmlFor={'language'}
+          style={{ fontSize: '10px' }}
         >
           Language:
         </label>

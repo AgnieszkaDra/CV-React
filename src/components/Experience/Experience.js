@@ -2,7 +2,7 @@ import React from 'react'
 import Icon from '../Icon'
 import Link from '../Link'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
-import classes from './styles.module.css'
+import classes from './styles.module.scss'
 import PropTypes from 'prop-types'
 
 export const Experience = (props) => {
@@ -17,21 +17,21 @@ export const Experience = (props) => {
           className={`${classes.list__item}`}
           key={i}
         >
-          <h3 className={`${classes.list__item__title}`}>{item.title}</h3>
+          <h6 className={`${classes.list__item__title}`}>{item.title}</h6>
           <div className={classes.date}>
             <Icon
               icon={faClock}
               className={`${classes.date__icon} icon`}
             >
             </Icon>
-            <h4 className={classes.date__time}>{item.date}</h4>
+            <h5 className={classes.date__time}>{item.date}</h5>
           </div>
         </li>
         <div
           className={`${classes.list__item}`}
           key={i}
         >
-          <h4 className={classes.list__item__title}>{item.description}</h4>
+          <h6 className={classes.list__item__title}>{item.description}</h6>
           <Link
             values={item.companyLink}
           >

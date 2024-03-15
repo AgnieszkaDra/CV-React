@@ -31,6 +31,11 @@ ul {
     flex-direction: column;
     padding: 20px;
     min-height: 90vh;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .container > * {
+    padding: 20px;
   }
   .headline-mobile {
     display: none;
@@ -51,7 +56,7 @@ ul {
   }
 }
 .none {
-  visibility: hidden;
+  display: none;
 }
 
 .border-round {

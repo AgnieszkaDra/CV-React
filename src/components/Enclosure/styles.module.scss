@@ -4,6 +4,10 @@
     display: flex;
     flex-direction: column;
 
+    &.none {
+        display: none;
+    }
+
     label {
         text-transform: capitalize;
         font-weight: 500;
@@ -12,9 +16,9 @@
 
     input {
         width: 30%;
+        height: 20px;
         margin: 10px 0;
         background: none;
-        padding: 10px 8px;
         border-radius: 0.3em;
         border: 1px solid $color-contrast;
        
@@ -25,7 +29,7 @@
     }
 
     button {
-        width: 20%;
+        width: 10%;
         margin: 10px 0;
         padding: 5px;
         border-radius: 0.3em;
@@ -35,7 +39,7 @@
         cursor: pointer;
         position: relative;
         font-weight: bold;
-        font-size: 1.5em;
+        font-size: 1rem;
         transition: 0.5s;
 
         &:active,
@@ -47,10 +51,17 @@
             background-color: white;
             ;
         }
+        .none {
+            display: none;
+        }
     }
 
     select {
         width: 10%;
-        height: 30px;
+        height: 20px;
     }
+}
+
+.paragraph {
+    font-size: 10px;
 }

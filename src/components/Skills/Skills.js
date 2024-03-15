@@ -1,6 +1,6 @@
 import React from 'react'
 
-import classes from './styles.module.css'
+import classes from './styles.module.scss'
 import PropTypes from 'prop-types'
 
 export const Skills = (props) => {
@@ -16,11 +16,6 @@ export const Skills = (props) => {
           key={i}
           className={classes.list__item}
         >
-          {/* <div className={classes.lineThird}>
-            <div className={classes.lineThird__dots}>
-              {spanElement(span)}
-            </div>
-          </div> */}
           {item}{item.level}
         </li>
       </>
@@ -40,7 +35,7 @@ export const Skills = (props) => {
   return (
     <div className={classes.container}>
       <div className={classes.item}>
-        <h3 className={classes.item__title}>{frontendtechnologies.title}</h3>
+        <h6 className={classes.item__title}>{frontendtechnologies.title}</h6>
         <ul className={classes.list}>
           {frontendtechnologies.list.map((item, i) => {
             return renderListFront(item, i)
@@ -48,7 +43,7 @@ export const Skills = (props) => {
         </ul>
       </div>
       <div className={classes.item}>
-        <h3 className={classes.item__title}>{languages.title}</h3>
+        <h6 className={classes.item__title}>{languages.title}</h6>
         <ul className={classes.list}>
           {languages.list.map((item, i) => {
             return renderListLanguages(item, i)

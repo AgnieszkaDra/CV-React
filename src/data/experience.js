@@ -2,6 +2,13 @@ const experience = {
 
   experienceList: [
     {
+      title: 'WORKING OF PROJECTS IN MY PORFTOLIO',
+      company: 'Self-learning',
+      date: '2021 - now',
+      description: 'I am open to connecting my experience in working with your company.',
+      companyLink: 'https://remarkable-pothos-5fcc29.netlify.app/'
+    },
+    {
       title: 'AKADEMIA SAMOUKA',
       company: 'Akademia Samouka',
       date: '01.01.2022 - now',
@@ -9,14 +16,7 @@ const experience = {
       companyLink: 'https://akademiasamouka.pl/'
     },
     {
-      title: 'MASTER OF PHARMACY',
-      company: 'Drofarm, Dr.Max',
-      date: '2013 - now',
-      description: 'It will be great to connect my pharmaceutical education with programming. In the link below there is form, which concept in based on my pharmaceutical website project writing by wordpress agency',
-      companyLink: 'https://apteka-namyslow.pl/formularz/'
-    },
-    {
-      title: 'WROCLAW MEDICAL UNIVERSITY - PHARMACY',
+      title: 'WROCLAW MEDICAL UNIVERSITY PHARMACY, MASTER OF PHARMACY',
       company: '',
       date: '10.2008 - 05.2013'
     }

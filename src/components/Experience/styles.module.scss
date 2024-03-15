@@ -10,19 +10,17 @@
     margin: 0;
     list-style: disc;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 50%);
   
     &__item {
         padding: 20px;
         &__title {
             margin: 10px 0;
         }
+        a {
+            font-size: 10px;
+        }
     }
-}
-
-::marker {
-    font-size: 30px;
-    color: $color-contrast;
 }
 
 .date {
@@ -38,9 +36,10 @@
     height: 30px;
     padding: 20px;
     display: block;
-   
     }
 }
+
+
 
 
 

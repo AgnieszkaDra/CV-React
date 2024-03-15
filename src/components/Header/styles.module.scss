@@ -1,18 +1,17 @@
 @import '../../styles/abstracts/';
 
 .header {
-    height: 40vh;
+    height: 30vh;
     display: flex;
     width: 100%;
-   
+    
     &__photo {
         width: 20%;
         height: 100%;
     }
 
     &__info {
-        width: 80%;
-        padding: 10px 0px;
+        width: 100%;
         display: flex;
     }
 }

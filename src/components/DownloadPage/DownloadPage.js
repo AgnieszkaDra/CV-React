@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './styles.module.css'
+import classes from './styles.module.scss'
 import html2pdf from 'html2pdf.js'
 
 const handleDownload = () => {

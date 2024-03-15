@@ -1,6 +1,6 @@
 import React from 'react'
 
-import classes from './styles.module.css'
+import classes from './styles.module.scss'
 import PropTypes from 'prop-types'
 
 export const Description = (props) => {
@@ -12,9 +12,9 @@ export const Description = (props) => {
     <div className={classes.data}>
       <h3 className={classes.data__name}>{name}</h3>
       <h4 className={classes.data__position}>{position}</h4>
-      <hr className={`${classes.data__hr_up} ${classes.data__hr}`}></hr>
-      <hr className={`${classes.data__hr_center} ${classes.data__hr}`}></hr>
-      <hr className={`${classes.data__hr_down} ${classes.data__hr}`}></hr>
+      <div className={`${classes.data__line_up} ${classes.data__line}`}></div>
+      <div className={`${classes.data__line_center} ${classes.data__line}`}></div>
+      <div className={`${classes.data__line_down} ${classes.data__line}`}></div>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import Icon from '../Icon'
 import { Link } from '../Link'
 
-import classes from './styles.module.css'
+import classes from './styles.module.scss'
 import PropTypes from 'prop-types'
 
 export const ContactsList = (props) => {
