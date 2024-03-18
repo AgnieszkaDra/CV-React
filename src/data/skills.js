@@ -10,20 +10,15 @@ const skills = {
       'HTML',
       'CSS5',
       'SCSS',
-      'Responsive Design',
-      'Tailwind',
       'Javascript',
-      'TypeScript',
       'React',
       'Vue',
       'Pinia',
-      'WEBPACK',
-      'API',
+      'TypeScript',
+      'REST API',
       'GIT',
-      'strong motivation',
-      'willingness to learn',
-      'critical thinking',
-      'positive attitude'
+      'WEBPACK',
+      'Tailwind'
     ]
   }
 }

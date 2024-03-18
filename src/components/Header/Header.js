@@ -1,6 +1,4 @@
 import React from 'react'
-
-// import Avatar from './Avatar'
 import ContactsList from '../ContactsList/ContactsList'
 import Description from '../Description/Description'
 import PropTypes from 'prop-types'
@@ -9,7 +7,6 @@ import classes from './styles.module.scss'
 export const Header = (props) => {
   return (
     <header className={classes.header}>
-      {/* <Avatar className={classes.header__photo}></Avatar> */}
       <div className={classes.header__info}>
         <Description
           {...props.profileDescription}

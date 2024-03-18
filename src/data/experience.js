@@ -5,7 +5,7 @@ const experience = {
       title: 'WORKING OF PROJECTS IN MY PORFTOLIO',
       company: 'Self-learning',
       date: '2021 - now',
-      description: 'I am open to connecting my experience in working with your company.',
+      description: 'Enhance my skills through practical projects',
       companyLink: 'https://remarkable-pothos-5fcc29.netlify.app/'
     },
     {
@@ -18,7 +18,7 @@ const experience = {
     {
       title: 'WROCLAW MEDICAL UNIVERSITY PHARMACY, MASTER OF PHARMACY',
       company: '',
-      date: '10.2008 - 05.2013'
+      date: '10.2008 - now'
     }
   ]
 }

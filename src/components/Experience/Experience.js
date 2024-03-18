@@ -21,7 +21,7 @@ export const Experience = (props) => {
           <div className={classes.date}>
             <Icon
               icon={faClock}
-              className={`${classes.date__icon} icon`}
+              className={classes.date__icon}
             >
             </Icon>
             <h5 className={classes.date__time}>{item.date}</h5>

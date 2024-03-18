@@ -24,6 +24,7 @@ export const ContactsList = (props) => {
           </Link>
           <Icon
             icon={item.icon}
+            className={classes.icon}
           >
           </Icon>
         </>
