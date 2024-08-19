@@ -29,12 +29,12 @@ ul {
     background-color: $color-background;
     @include flexAbsoluteCenter();
     flex-direction: column;
-    padding: 20px;
     min-height: 90vh;
     max-width: 1200px;
     margin: auto;
     & > * {
-      padding: 20px;
+      padding: 0 50px 0 50px;
+      margin: 20px 0 20px 0;
     }
   }
 
@@ -64,9 +64,6 @@ ul {
 .none {
   display: none;
 }
-
-
-
 
 .border-round {
   border-radius: 50%;

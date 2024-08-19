@@ -18,7 +18,9 @@ const skills = {
       'REST API',
       'GIT',
       'WEBPACK',
-      'Tailwind'
+      'Tailwind',
+      'Mongo',
+      'NextJS'
     ]
   }
 }

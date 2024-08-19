@@ -4,13 +4,14 @@ import data from '../../data'
 import Section from '../Section/Section'
 import Experience from '../Experience/Experience'
 import Skills from '../Skills/Skills'
-// import Projects from '../Projects/Projects'
+import Projects from '../Projects/Projects'
 import { faBriefcase, faCode, faFile } from '@fortawesome/free-solid-svg-icons'
 import Enclosure from '../Enclosure'
+import classes from './styles.module.scss'
 
 export const Main = () => {
   return (
-    <main>
+    <main className={classes.main}>
       <Section
         {...data}
         content={<Experience {...data.experience}></Experience>}
@@ -22,6 +23,13 @@ export const Main = () => {
         {...data}
         content={<Skills {...data.skills}></Skills>}
         title={'Skills'}
+        icon={faCode}
+      >
+      </Section>
+      <Section
+        {...data}
+        content={<Projects {...data.projects}></Projects>}
+        title={'Projects'}
         icon={faCode}
       >
       </Section>

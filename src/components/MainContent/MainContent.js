@@ -7,18 +7,11 @@ import DownloadPage from '../DownloadPage'
 import data from '../../data'
 
 export default class MainContent extends React.Component {
-  constructor (props) {
-    super(props)
-    // eslint-disable-next-line react/prop-types
-    this.className = props.className
-  }
-
   render () {
     return (
       <>
         <div
-          className={`container ${this.className ? 'none' : ''}`}
-          id={'content'}
+          className={'container'}
         >
           <Header
             {...data.infoProfile}

@@ -1,7 +1,7 @@
 import { faEnvelope, faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 const infoProfile = {
-  profileBasic: { name: 'Agnieszka Dragańczyk', title: 'Junior Front End Developer' },
+  profileBasic: { name: 'Agnieszka Dragańczyk', title: 'Front End Developer' },
   profileList: {
     list: [
       {
@@ -20,7 +20,7 @@ const infoProfile = {
   },
   profileDescription: {
     name: 'Agnieszka Dragańczyk',
-    position: 'FRONTEND DEVELOPER - junior'
+    position: 'FRONTEND DEVELOPER'
   }
 }
 
