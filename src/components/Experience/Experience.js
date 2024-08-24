@@ -9,7 +9,6 @@ export const Experience = (props) => {
   const {
     experienceList
   } = props
-
   const renderListItem = (item, i) => {
     return (
       <ul className={classes.list}>
@@ -40,7 +39,6 @@ export const Experience = (props) => {
       </ul>
     )
   }
-
   return (
     <>
       <div className={classes.container}>

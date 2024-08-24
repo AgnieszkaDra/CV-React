@@ -3,7 +3,7 @@ import React from 'react'
 import classes from './styles.module.scss'
 import PropTypes from 'prop-types'
 
-export const Description = (props) => {
+export const InfoProfile = (props) => {
   const {
     name,
     position
@@ -19,10 +19,9 @@ export const Description = (props) => {
   )
 }
 
-Description.propTypes = {
-  className: PropTypes.string,
+InfoProfile.propTypes = {
   name: PropTypes.string,
   position: PropTypes.string
 }
 
-export default Description
+export default InfoProfile

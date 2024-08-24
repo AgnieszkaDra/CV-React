@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 
 export const ContactsList = (props) => {
   const {
-    list
+    contactsList
   } = props
 
   const renderListItem = (item, i) => {
@@ -35,7 +35,7 @@ export const ContactsList = (props) => {
   return (
     <div className={classes.contacts}>
       <ul className={classes.list} >
-        {list.map((item, i) => {
+        {contactsList.map((item, i) => {
           return renderListItem(item, i)
         })}
       </ul>
@@ -45,7 +45,7 @@ export const ContactsList = (props) => {
 
 ContactsList.propTypes = {
   className: PropTypes.string,
-  list: PropTypes.array
+  contactsList: PropTypes.array
 }
 
 export default ContactsList

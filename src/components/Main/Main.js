@@ -8,13 +8,13 @@ import Projects from '../Projects/Projects'
 import { faBriefcase, faCode, faFile } from '@fortawesome/free-solid-svg-icons'
 import Enclosure from '../Enclosure'
 import classes from './styles.module.scss'
+import PropTypes from 'prop-types'
 
-export const Main = () => {
+export const Main = (props) => {
   return (
     <main className={classes.main}>
       <Section
-        {...data}
-        content={<Experience {...data.experience}></Experience>}
+        content={<Experience {...props}></Experience>}
         title={'Education and Experience'}
         icon={faBriefcase}
       >
@@ -48,6 +48,12 @@ export const Main = () => {
       </Section> */}
     </main>
   )
+}
+
+Main.propTypes = {
+  experienceList: PropTypes.array,
+  position: PropTypes.string,
+  contactsList: PropTypes.object
 }
 
 export default Main

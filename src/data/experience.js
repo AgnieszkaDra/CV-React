@@ -1,5 +1,4 @@
 const experience = {
-
   experienceList: [
     {
       title: 'WORKING OF PROJECTS IN MY PORFTOLIO',
