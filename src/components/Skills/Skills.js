@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 export const Skills = (props) => {
   const {
-    frontendtechnologies,
+    technologies,
     languages
   } = props
 
@@ -35,9 +35,9 @@ export const Skills = (props) => {
   return (
     <div className={classes.container}>
       <div>
-        <h6 className={classes.title}>{frontendtechnologies.title}</h6>
+        <h6 className={classes.title}>{technologies.title}</h6>
         <ul className={classes.list}>
-          {frontendtechnologies.list.map((item, i) => {
+          {technologies.list.map((item, i) => {
             return renderListFront(item, i)
           })}
         </ul>
@@ -55,7 +55,7 @@ export const Skills = (props) => {
 }
 
 Skills.propTypes = {
-  frontendtechnologies: PropTypes.array,
+  technologies: PropTypes.array,
   languages: PropTypes.object
 }
 

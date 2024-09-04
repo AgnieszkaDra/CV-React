@@ -37,21 +37,39 @@ CV.propTypes = {
   infoProfile: PropTypes.shape({
     name: PropTypes.string,
     position: PropTypes.string,
-    contactsList: PropTypes.object
+    contactsList: PropTypes.array
   }).isRequired,
-  experience: PropTypes.arrayOf(
-    PropTypes.shape({
-      company: PropTypes.string,
-      role: PropTypes.string
-      // Add other properties as necessary
-    })
-  ).isRequired,
-  skills: PropTypes.arrayOf(PropTypes.string).isRequired,
-  projects: PropTypes.arrayOf(
-    PropTypes.shape({
+  experience: PropTypes.shape({
+    experienceList: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
+        company: PropTypes.string,
+        companyName: PropTypes.string,
+        description: PropTypes.string
+      })
+    )
+  }),
+  skills: PropTypes.shape({
+    languages: PropTypes.shape({
       title: PropTypes.string,
-      description: PropTypes.string
-      // Add other properties as necessary
+      list: PropTypes.array
+    }),
+    technologies: PropTypes.shape({
+      title: PropTypes.string,
+      list: PropTypes.array
     })
-  ).isRequired
+  }),
+  projects: PropTypes.shape({
+    description: PropTypes.string,
+    examples: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string,
+        list: PropTypes.shape({
+          url: PropTypes.string,
+          description: PropTypes.string
+        })
+      })
+    )
+  })
 }

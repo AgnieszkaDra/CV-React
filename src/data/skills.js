@@ -1,10 +1,9 @@
 const skills = {
-
   languages: {
     title: 'Languages',
     list: [{ name: 'Polish', level: 'Native' }, { name: 'English', level: 'B2' }]
   },
-  frontendtechnologies: {
+  technologies: {
     title: 'Technologies',
     list: [
       'HTML',
