@@ -5,21 +5,20 @@ import PropTypes from 'prop-types'
 
 export const Icon = (props) => {
   const {
-    icon, className
+    icon
   } = props
 
   return (
     <FontAwesomeIcon
       icon={icon}
-      className={`${classes.icon} ${className}`}
+      className={classes.icon}
     >
     </FontAwesomeIcon>
   )
 }
 
 Icon.propTypes = {
-  icon: PropTypes.string,
-  className: PropTypes.string
+  icon: PropTypes.object
 }
 
 export default Icon

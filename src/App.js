@@ -22,11 +22,7 @@ const CV = ({ infoProfile, experience, skills, projects }) => {
           {...infoProfile}
         >
         </Header>
-        <Main
-          {...experience}
-          {...skills}
-          {...projects}
-        >
+        <Main>
           <Section
             content={<Experience {...experience}></Experience>}
             title={'Education and Experience'}

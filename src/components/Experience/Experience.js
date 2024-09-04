@@ -16,7 +16,7 @@ export const Experience = (props) => {
           className={`${classes.list__item}`}
           key={i}
         >
-          <h6 className={`${classes.list__item__title}`}>{item.title}</h6>
+          <h6 className={`${classes.list__item__title}`}>{item.name}</h6>
           <div className={classes.date}>
             <Icon
               icon={faClock}
@@ -55,8 +55,7 @@ Experience.propTypes = {
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       date: PropTypes.string.isRequired,
-      company: PropTypes.string,
-      companyName: PropTypes.string,
+      companyLink: PropTypes.string,
       description: PropTypes.string
     })
   )

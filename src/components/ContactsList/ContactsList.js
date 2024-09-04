@@ -1,7 +1,6 @@
 import React from 'react'
 import Icon from '../Icon'
 import { Link } from '../Link'
-
 import classes from './styles.module.scss'
 import PropTypes from 'prop-types'
 
@@ -44,7 +43,6 @@ export const ContactsList = (props) => {
 }
 
 ContactsList.propTypes = {
-  className: PropTypes.string,
   contactsList: PropTypes.array
 }
 

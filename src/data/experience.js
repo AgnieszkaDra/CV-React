@@ -9,7 +9,7 @@ const experience = {
     {
       name: 'MASTER OF PHARMACY',
       date: '10.2013 - now',
-      company: 'Dr.Max, Dr.Zdrowie, Drofarm'
+      description: 'Dr.Max, Dr.Zdrowie, Drofarm'
     }
   ]
 }
