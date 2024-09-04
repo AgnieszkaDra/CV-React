@@ -46,7 +46,15 @@ export const Projects = (props) => {
 }
 
 Projects.propTypes = {
-  examples: PropTypes.string
+  examples: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      list: PropTypes.shape({
+        url: PropTypes.string,
+        description: PropTypes.string
+      })
+    })
+  )
 }
 
 export default Projects

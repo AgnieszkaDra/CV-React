@@ -34,9 +34,7 @@ export const Section = (props) => {
 }
 
 Section.propTypes = {
-  classNameVariant: PropTypes.string,
-  content: PropTypes.string,
-  sectionTitle: PropTypes.string,
+  content: PropTypes.object,
   icon: PropTypes.object,
   title: PropTypes.string
 }

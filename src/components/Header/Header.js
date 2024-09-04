@@ -1,14 +1,16 @@
 import React from 'react'
 import ContactsList from '../ContactsList/ContactsList'
 import InfoProfile from '../InfoProfile/InfoProfile'
-import PropTypes from 'prop-types'
 import classes from './styles.module.scss'
+import PropTypes from 'prop-types'
 
 export const Header = (props) => {
   return (
     <header className={classes.header}>
       <div className={classes.header__info}>
-        <InfoProfile {...props}/>
+        <InfoProfile
+          {...props}
+        />
         <ContactsList
           {...props}
         >
@@ -19,9 +21,7 @@ export const Header = (props) => {
 }
 
 Header.propTypes = {
-  name: PropTypes.string,
-  position: PropTypes.string,
-  contactsList: PropTypes.object
+  infoProfile: PropTypes.object
 }
 
 export default Header

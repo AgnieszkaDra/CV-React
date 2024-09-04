@@ -55,8 +55,14 @@ export const Skills = (props) => {
 }
 
 Skills.propTypes = {
-  technologies: PropTypes.array,
-  languages: PropTypes.object
+  languages: PropTypes.shape({
+    title: PropTypes.string,
+    list: PropTypes.array
+  }),
+  technologies: PropTypes.shape({
+    title: PropTypes.string,
+    list: PropTypes.array
+  })
 }
 
 export default Skills

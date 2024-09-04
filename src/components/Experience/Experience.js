@@ -51,7 +51,15 @@ export const Experience = (props) => {
 }
 
 Experience.propTypes = {
-  experienceList: PropTypes.array
+  experienceList: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      company: PropTypes.string,
+      companyName: PropTypes.string,
+      description: PropTypes.string
+    })
+  )
 }
 
 export default Experience
