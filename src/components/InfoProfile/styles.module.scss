@@ -11,41 +11,28 @@
 
     &__name {
         letter-spacing: 0.1em;
-        font-size: 1.8rem;
-        padding: 20px;
+        font-size: 0.8rem;
+        margin: 0 0 10px 10px;
         color: $color-contrast;
     }
 
     &__position {
         font-size: 1rem;
-        padding: 0 20px 20px 20px;
+        margin: 0 0 10px 15px;
+    }
+
+    &__decoration {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
     }
 
     &__line {
         display: block;
         height: 2px;   
         background-color: $color-contrast;
-    }
-
-    &__line_up {
-        position: absolute;
-        bottom: 40px;
-        width: calc(100% - 60% - 40px);
-        height: 2px;
-        left: calc(30% - 40px);
-    }
-
-    &__line_center{
-        position: absolute;
-        bottom: 30px;
-        width: calc(100% - 70% - 40px);
-        left: calc(35% - 40px);
-    }
-
-    &__line_down {
-        position: absolute;
-        bottom: 20px;
-        width: calc(100% - 80% - 40px);
-        left: calc(40% - 40px);
+        margin: 0 auto; 
     }
 }

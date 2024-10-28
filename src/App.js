@@ -17,6 +17,7 @@ const CV = ({ infoProfile, experience, skills, projects }) => {
     <>
       <div
         className={'container'}
+        id={'content'}
       >
         <Header
           {...infoProfile}

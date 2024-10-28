@@ -3,6 +3,7 @@ import classes from './styles.module.scss'
 import html2pdf from 'html2pdf.js'
 
 const handleDownload = () => {
+  alert('fjdnfjd')
   const element = document.getElementById('content')
   const options = {
     margin: 10,
