@@ -1,3 +1,12 @@
+:root {
+  --color-background: rgb(251, 251, 251);
+  --color-contrast: rgb(88, 196, 219);
+  --color-contrast-light: rgb(147, 228, 246);
+  --color-grey-light: rgb(179, 176, 176);
+  --color-font-main: rgb(100, 98, 98);
+  --color-font-contrast: rgb(57, 57, 57);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,13 +14,14 @@
   scroll-behavior: smooth;
 }
 
+
 a {
   text-decoration: none;
-  color: rgb(100, 98, 98);
+  color: var(--color-font-main)
 }
 
 a:hover {
-  color: gray;
+  color: var(--color-grey-light);
   text-decoration: none;
   cursor: pointer;
 }
@@ -23,8 +33,8 @@ ul {
 
 @media only screen and (min-width: 900px) {
   .container {
-    color: rgb(100, 98, 98);
-    background-color: rgb(251, 251, 251);
+    color: var(--color-font-main);
+    background-color: var(--color-background);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +71,7 @@ ul {
 
 .border-round {
   border-radius: 50%;
-  border: 2px solid rgb(88, 196, 219);
+  border: 2px solid var(--color-contrast);
   margin-right: 10px;
   display: flex;
   justify-content: center;

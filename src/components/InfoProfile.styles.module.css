@@ -1,0 +1,48 @@
+.data {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  text-transform: uppercase;
+}
+.data__name {
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  margin: 0 0 10px 10px;
+  color: rgb(88, 196, 219);
+}
+.data__position {
+  font-size: 1rem;
+  margin: 0 0 10px 15px;
+}
+.data__decoration {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  margin: 0 0 10px 20px;
+}
+.data__line {
+  display: block;
+  background-color: rgb(88, 196, 219);
+  margin: 0 auto;
+  width: 100%;
+}
+.data__line-1 {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+}
+.data__line-2 {
+  width: 90%;
+  height: 2px;
+  margin-bottom: 5px;
+}
+.data__line-3 {
+  width: 80%;
+  height: 2px;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=InfoProfile.styles.module.css.map */

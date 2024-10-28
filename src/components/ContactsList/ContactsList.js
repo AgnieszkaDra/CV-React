@@ -4,11 +4,7 @@ import { Link } from '../Link'
 import classes from './styles.module.scss'
 import PropTypes from 'prop-types'
 
-export const ContactsList = (props) => {
-  const {
-    contactsList
-  } = props
-
+export const ContactsList = ({ contactsList }) => {
   const renderListItem = (item, i) => {
     return (
       <li

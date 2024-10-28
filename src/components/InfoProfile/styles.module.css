@@ -1,43 +1,32 @@
 .data {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  position: relative;
-  text-transform: uppercase;
-}
-.data__name {
-  letter-spacing: 0.1em;
-  font-size: 1.8rem;
-  padding: 20px;
-  color: rgb(88, 196, 219);
-}
-.data__position {
-  font-size: 1rem;
-  padding: 0 20px 20px 20px;
-}
-.data__line {
-  display: block;
-  height: 2px;
-  background-color: rgb(88, 196, 219);
-}
-.data__line_up {
-  position: absolute;
-  bottom: 40px;
-  width: calc(40% - 40px);
-  height: 2px;
-  left: calc(30% - 40px);
-}
-.data__line_center {
-  position: absolute;
-  bottom: 30px;
-  width: calc(30% - 40px);
-  left: calc(35% - 40px);
-}
-.data__line_down {
-  position: absolute;
-  bottom: 20px;
-  width: calc(20% - 40px);
-  left: calc(40% - 40px);
-}
-
-/*# sourceMappingURL=styles.module.css.map */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .name {
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    margin: 0 0 10px 10px;
+    color: rgb(88, 196, 219);
+  }
+  .position {
+    font-size: 1rem;
+    margin: 0 0 10px 15px;
+  }
+  .decoration {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    margin: 0 0 10px 20px;
+  }
+  .line {
+    display: block;
+    background-color: rgb(88, 196, 219);
+    margin: 0 auto;
+    width: 100%;
+  }
+  

@@ -1,0 +1,13 @@
+
+
+.data {
+    &__line {
+        @for $i from 1 through 3 {
+            &-#{$i} {
+              width: #{100 - (($i - 1) * 10%)};
+              height: 2px;
+              margin-bottom: 5px;
+            }
+          }
+    }
+}
