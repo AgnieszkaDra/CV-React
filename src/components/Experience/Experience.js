@@ -2,51 +2,49 @@ import React from 'react'
 import Icon from '../Icon'
 import Link from '../Link'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
-import classes from './styles.module.scss'
+import classes from './styles.module.css'
 import PropTypes from 'prop-types'
 
-export const Experience = (props) => {
-  const {
-    experienceList
-  } = props
+export const Experience = ({ experienceList }) => {
   const renderListItem = (item, i) => {
     return (
-      <ul className={classes.list}>
-        <li
-          className={`${classes.list__item}`}
-          key={i}
-        >
-          <h6 className={`${classes.list__item__title}`}>{item.name}</h6>
+      <li
+        className={`${classes.item}`}
+        key={i}
+      >
+        <div>
+          <h5 className={`${classes.h5}`}>{item.name}</h5>
           <div className={classes.date}>
-            <Icon
-              icon={faClock}
-              className={classes.date__icon}
-            >
-            </Icon>
-            <h5 className={classes.date__time}>{item.date}</h5>
+            <div className={classes.icon}>
+              <Icon
+                icon={faClock}
+              >
+              </Icon>
+            </div>
+            <h6>{item.date}</h6>
           </div>
-        </li>
+        </div>
         <div
           className={`${classes.list__item}`}
           key={i}
         >
-          <h6 className={classes.list__item__title}>{item.description}</h6>
-          <Link
-            values={item.companyLink}
-          >
-          </Link>
+          <h5 className={`${classes.h5}`}>{item.description}</h5>
+          <h6 className={`${classes.h6} ${classes.cursive}`}>
+            <Link
+              values={item.companyLink}
+            >
+            </Link>
+          </h6>
         </div>
-      </ul>
+      </li>
     )
   }
   return (
-    <>
-      <div className={classes.container}>
-        {experienceList.map((item, i) => {
-          return renderListItem(item, i)
-        })}
-      </div>
-    </>
+    <ul className={classes.list}>
+      {experienceList.map((item, i) => {
+        return renderListItem(item, i)
+      })}
+    </ul>
   )
 }
 

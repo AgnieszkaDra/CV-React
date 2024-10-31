@@ -1,13 +1,8 @@
 .section {
-  padding: 0 20px 0 20px;
-  margin: 80px 0;
   position: relative;
 }
 
 .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   padding: 20px;
@@ -17,12 +12,12 @@
   display: grid;
   grid-template-columns: 7% 23% 70%;
   grid-template-areas: "iconSection titleSection lineSection";
-  padding: 30px 0 30px 0;
+  padding: 10px 0 10px 0;
 }
 
 .title {
-  color: rgb(100, 98, 98);
-  font-size: 1.4rem;
+  color: var(--color-font-main);
+  font-size: 0.8rem;
   text-transform: uppercase;
   margin: 0;
   display: flex;
@@ -39,9 +34,9 @@
 
 .line {
   margin: 0;
-  border: 2px dotted rgb(88, 196, 219);
+  border: 2px dotted var(--color-contrast);
   grid-column: 3/4;
-  width: 80%;
+  width: 100%;
 }
 
-/*# sourceMappingURL=styles.module.css.map */
+

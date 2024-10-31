@@ -39,13 +39,12 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 90vh;
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
   }
   .container > * {
     padding: 0 50px 0 50px;
-    margin: 20px 0 20px 0;
+    margin: 0px 0 20px 0;
   }
   .headline-mobile {
     display: none;

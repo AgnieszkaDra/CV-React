@@ -1,47 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from '../Link'
-// import Typography from '../Typography/Typography'
+import classes from './styles.module.css'
 
-import classes from './styles.module.scss'
-
-export const Projects = (props) => {
-  const {
-    examples
-  } = props
-
-  const renderList = (item) => {
-    return (
-      <div className={classes.list}>
-        <div className={classes.description}>{item.description}</div>
-        <Link
-          className={classes.url}
-          values={item.url}
-        >
-        </Link>
-      </div>
-    )
-  }
-
+export const Projects = ({ examples }) => {
   const renderListItem = (item) => {
     return (
-      <div className={classes.item}>
+      <li className={classes.item}>
         <h3 className={classes.title}>{item.title}</h3>
-        {renderList(item.list)}
-      </div>
+        <div className={classes.description}>{item.description}</div>
+        <h4 className={classes.cursive}>
+          <Link
+            className={classes.url}
+            values={item.url}
+          >
+          </Link>
+        </h4>
+      </li>
     )
   }
 
   return (
-
-    <div className={`${classes.root}`} >
-      <div className={classes.container}>
-        {examples.map((item, i) => {
-          return renderListItem(item, i)
-        })}
-      </div>
-    </div>
-
+    <ul className={classes.list}>
+      {examples.map((item, i) => {
+        return renderListItem(item, i)
+      })}
+    </ul>
   )
 }
 

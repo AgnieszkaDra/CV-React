@@ -1,4 +1,8 @@
+@import '../styles//abstracts/';
 
+.icon, .lineContainer {
+    @include flexAbsoluteCenter();
+}
 
 .data {
     &__line {
@@ -10,4 +14,11 @@
             }
           }
     }
+}
+
+.button {
+    &:active,
+    &:focus {
+        outline: 0;
+        }
 }

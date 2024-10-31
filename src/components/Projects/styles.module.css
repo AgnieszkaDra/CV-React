@@ -1,0 +1,28 @@
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.item {
+    background-color: var(--color-contrast-light);
+    color: var(--color-font-main);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 0.8rem;
+    list-style: none;
+}
+
+.item:nth-child(even) {
+    background-color: var(--color-contrast);
+}
+
+.title, .description{
+    color: var(--color-font-main);
+    margin-bottom: 12px;
+}
+
+.cursive {
+    font-style: italic;
+}

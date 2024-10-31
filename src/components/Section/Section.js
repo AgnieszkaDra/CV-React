@@ -1,15 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-import classes from './styles.module.scss'
+import classes from './styles.module.css'
 import PropTypes from 'prop-types'
 
-export const Section = (props) => {
-  const {
-    title,
-    icon,
-    content
-  } = props
+export const Section = ({ title, icon, content }) => {
   return (
     <section
       className={classes.section}
