@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './styles.module.scss'
+import classes from './styles.module.css'
 import html2pdf from 'html2pdf.js'
 
 const handleDownload = () => {
@@ -17,7 +17,7 @@ const handleDownload = () => {
 
 export const DownloadPage = () => {
   return (
-    <div className={classes.root}>
+    <div className={classes.container}>
       <button
         className={classes.button}
         onClick={handleDownload}

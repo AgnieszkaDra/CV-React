@@ -2,28 +2,28 @@
   display: flex;
   flex-direction: column;
 }
-.container label {
+.label {
   text-transform: capitalize;
   font-weight: 500;
   margin: 10px 0;
 }
-.container input {
+.input {
   width: 30%;
   margin: 10px 0;
   background: none;
   padding: 10px 8px;
   border-radius: 0.3em;
-  border: 1px solid rgb(88, 196, 219);
+  border: 1px solid var(--color-contrast);
 }
-.container input:focus, .container input:active {
+.input:focus, .input:active {
   outline: none;
 }
-.container button {
+.button {
   width: 20%;
   margin: 10px 0;
   padding: 5px;
   border-radius: 0.3em;
-  background-color: rgb(88, 196, 219);
+  background-color: var(--color-contrast);
   border: none;
   box-shadow: none;
   cursor: pointer;
@@ -32,15 +32,15 @@
   font-size: 1.5em;
   transition: 0.5s;
 }
-.container button:active, .container button:focus {
+.button:active, .button:focus {
   outline: 0;
 }
-.container button:hover {
-  background-color: white;
+.button:hover {
+  background-color: var(--color-background);
 }
-.container select {
+.select {
   width: 10%;
   height: 30px;
 }
 
-/*# sourceMappingURL=styles.module.css.map */
+

@@ -8,11 +8,13 @@
   flex-direction: column;
   align-items: flex-end;
 }
-.list__element {
+
+.element {
   margin-bottom: 20px;
   display: flex;
 }
-.list__link {
+
+.link {
   font-size: 0.5rem;
   margin-right: 10px;
   display: flex;
@@ -20,4 +22,3 @@
   align-items: center;
 }
 
-/*# sourceMappingURL=styles.module.css.map */

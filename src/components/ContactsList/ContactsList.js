@@ -1,7 +1,7 @@
 import React from 'react'
 import Icon from '../Icon'
 import { Link } from '../Link'
-import classes from './styles.module.scss'
+import classes from './styles.module.css'
 import PropTypes from 'prop-types'
 
 export const ContactsList = ({ contactsList }) => {
@@ -9,17 +9,16 @@ export const ContactsList = ({ contactsList }) => {
     return (
       <li
         key={i}
-        className={classes.list__element}
+        className={classes.element}
       >
         <>
           <Link
-            className={classes.list__link}
+            className={classes.link}
             values={item.data}
           >
           </Link>
           <Icon
             icon={item.icon}
-            className={classes.icon}
           >
           </Icon>
         </>

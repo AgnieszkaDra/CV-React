@@ -6,7 +6,7 @@
 .item {
   padding: 20px;
 }
-.item__title {
+.title {
   margin: 10px 10px;
   text-transform: uppercase;
 }
@@ -21,14 +21,14 @@
   display: grid;
   grid-template-columns: repeat(2, 50%);
 }
-.list__item {
+.item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-left: 3px solid black;
+  border-left: 3px solid var(--color-font-contrast);
   font-size: 16px;
   padding: 8px;
   margin-bottom: 10px;
 }
 
-/*# sourceMappingURL=styles.module.css.map */
+

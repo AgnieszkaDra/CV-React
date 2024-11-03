@@ -1,6 +1,5 @@
 import React from 'react'
-
-import classes from './styles.module.scss'
+import classes from './styles.module.css'
 import PropTypes from 'prop-types'
 
 export const Skills = (props) => {
@@ -14,7 +13,7 @@ export const Skills = (props) => {
       <>
         <li
           key={i}
-          className={classes.list__item}
+          className={classes.item}
         >
           {item}{item.level}
         </li>
@@ -25,7 +24,7 @@ export const Skills = (props) => {
     return (
       <li
         key={i}
-        className={classes.list__item}
+        className={classes.item}
       >
         {item.name} - {item.level}
       </li>

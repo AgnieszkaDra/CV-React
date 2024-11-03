@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import classes from './styles.module.scss'
+import classes from './styles.module.css'
 import { useSelectLanguage } from '../../hooks/useSelectLanguage'
 import { useCompanyName } from '../../hooks/useCompanyName'
 
@@ -28,6 +28,7 @@ export const Enclosure = () => {
         <label
           htmlFor={'companyName'}
           style={{ fontSize: '10px' }}
+          className={classes.label}
         >Company name
         </label>
         <input
@@ -35,10 +36,12 @@ export const Enclosure = () => {
           id={'companyName'}
           value={companyName}
           onChange={handleCompanyName}
+          className={classes.input}
         />
         <label
           htmlFor={'language'}
           style={{ fontSize: '10px' }}
+          className={classes.label}
         >
           Language:
         </label>
@@ -46,6 +49,7 @@ export const Enclosure = () => {
           id={'language'}
           name={'language'}
           value={selectedLanguage}
+          className={classes.select}
           onChange={handleLanguageChange}
           required
         >
@@ -63,6 +67,7 @@ export const Enclosure = () => {
         <button
           type={'submit'}
           onClick={handleConfirmationClick}
+          className={classes.button}
         >
           Confirm
         </button>
