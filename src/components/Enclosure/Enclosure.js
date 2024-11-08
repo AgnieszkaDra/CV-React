@@ -24,7 +24,7 @@ export const Enclosure = () => {
       {selectedLanguage === '' && <div><p className={classes.paragraph}>{enclosure.polish}</p><p className={classes.paragraph}>{enclosure.polish2}</p></div>}
       {selectedLanguage === 'polish' && <p className={classes.paragraph}>{enclosure.polish}</p>}
       {selectedLanguage === 'english' && <p className={classes.paragraph}>{enclosure.english}</p>}
-      <div className={`${confirmationClass} ${classes.container}`} >
+      <div className={`${confirmationClass}`} >
         <label
           htmlFor={'companyName'}
           style={{ fontSize: '10px' }}

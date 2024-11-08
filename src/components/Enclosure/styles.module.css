@@ -1,6 +1,5 @@
-.container {
-  display: flex;
-  flex-direction: column;
+.paragraph {
+  font-size: xx-small;
 }
 .label {
   text-transform: capitalize;
@@ -41,6 +40,9 @@
 .select {
   width: 10%;
   height: 30px;
+}
+.none {
+  display: none;
 }
 
 
