@@ -1,10 +1,10 @@
 const experience = {
   experienceList: [
     {
-      name: 'WORKING OF PROJECTS IN MY PORFTOLIO',
+      name: 'WORKING ON PROJECTS AND DEVELOPING SKILLS',
       date: '2021 - now',
-      description: 'In my portfolio, each project showcases the process of developing my skills.',
-      companyLink: 'https://remarkable-pothos-5fcc29.netlify.app/'
+      description: 'In my github account, each project showcases the process of developing my skills.',
+      companyLink: 'https://github.com/AgnieszkaDra'
     },
     {
       name: 'MASTER OF PHARMACY',

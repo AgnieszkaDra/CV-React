@@ -9,17 +9,13 @@ const skills = {
       'HTML',
       'CSS5',
       'SCSS',
-      'Javascript',
+      'JavaScript',
       'React',
-      'Vue',
-      'Pinia',
       'TypeScript',
       'REST API',
       'GIT',
       'WEBPACK',
-      'Tailwind',
-      'Mongo',
-      'NextJS'
+      'Tailwind'
     ]
   }
 }

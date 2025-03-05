@@ -1,4 +1,4 @@
-import { faEnvelope, faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const infoProfile = {
   name: 'Agnieszka Dragańczyk',
@@ -11,11 +11,11 @@ const infoProfile = {
     {
       icon: faPhone,
       data: '+48 517 862 170'
-    },
-    {
-      icon: faGlobe,
-      data: 'https://remarkable-pothos-5fcc29.netlify.app/'
     }
+    // {
+    //   icon: faGlobe,
+    //   data: 'https://remarkable-pothos-5fcc29.netlify.app/'
+    // }
   ]
 }
 
