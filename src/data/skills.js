@@ -10,12 +10,13 @@ const skills = {
       'CSS5',
       'SCSS',
       'JavaScript',
-      'React',
       'TypeScript',
+      'React',
       'REST API',
       'GIT',
       'WEBPACK',
-      'Tailwind'
+      'Tailwind',
+      'OOP'
     ]
   }
 }

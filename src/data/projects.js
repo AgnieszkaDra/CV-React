@@ -3,7 +3,7 @@ export const projects = {
   examples: [
     {
       title: 'Shop TS. This project is still in the developing process',
-      url: 'https://extraordinary-florentine-bc25d2.netlify.app/',
+      url: 'https://github.com/AgnieszkaDra/shop-TS',
       description: 'This project is an e-commerce web application built using TypeScript, json-server, and Vite. The application features a client-side interface for users to browse products, manage a shopping cart, and place orders. On the admin side, there’s an interface for managing orders and tracking their status.'
     },
     {
@@ -17,9 +17,9 @@ export const projects = {
       description: 'Basic-Page-React is a single page website (SPA), which could serve a business card'
     },
     {
-      title: 'Opening Posts',
-      url: 'https://tubular-strudel-c363fe.netlify.app',
-      description: 'Opening Posts is a part of a blog application that will be developed for the entire website.'
+      title: 'Hall Reservation',
+      url: 'https://github.com/AgnieszkaDra/Hall-Reservation',
+      description: 'This project is a Hall Reservation System being developed in pure TypeScript, following Object-Oriented Programming (OOP) principles. The goal is to create a structured, maintainable, and scalable application for managing hall reservations efficiently'
     }
   ]
 }
